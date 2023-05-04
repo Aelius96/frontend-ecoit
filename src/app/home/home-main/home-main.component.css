@@ -1,0 +1,88 @@
+.breadcrumb-box{
+  width: 100%;
+}
+.breadcrumb-box img{
+  width: 100%;
+  object-fit: cover;
+
+}
+@-webkit-keyframes imgslide {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes imgslide {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.chuyenmuc{
+  text-align: center ;
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: initial;
+}
+#gachchan{
+  width: 100px;
+  margin-top: 20px;
+  border-top: 1px solid white;
+}
+#gachchan.gioithieu{
+  border-top: 1px solid #101011;;
+}
+#aa{
+  background-color: #50b848;
+}
+
+
+/*tuyển dụng tin tức  */
+.container-fluid{
+  padding: 0px 30px 20px 30px;
+}
+.row{
+  margin: 0px 0px 0px 0px;
+}
+
+/* tin tức tuyển dụng */
+.payment-staps-way-wrap{
+  padding-bottom: 50px;
+}
+
+
+.blog-inner{
+  width: 70%;
+  padding-left: 10px;
+}
+#text{
+  text-transform: uppercase;
+  color: #5748b8df;
+}
+@media (min-width: 768px){
+  .col-sm-6{
+    width: 50%;
+    float: left;
+  }
+}
+.col-md-12{
+  width: 50%;
+  float: left;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.h7tttd{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.ptdtt{
+  padding-bottom: 20px;
+}
+
+/* spcl */
+.imgicon{
+  color: black;
+}
+
+.pricing-table__title{
+  font-family: "Times New Roman";
+}
