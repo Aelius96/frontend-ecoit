@@ -1,0 +1,53 @@
+
+.chuyenmuc{
+    text-align: center ;
+      font-size: 30px;
+      margin-top: 20px;
+      font-family: initial;
+  }
+  #gachchan{
+    width: 100px;
+    margin-top: 20px; 
+    border-top: 1px solid rgb(0, 0, 0);
+}
+/*  */
+.iconn{
+    font-size: 25px;
+    color: aliceblue;
+}
+.pricing-table__inner{
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+.pricing-table__title{
+    letter-spacing: -.4px; 
+    align-content: center; 
+    color: rgb(0, 0, 0);
+     margin-top: 10px; 
+     margin-bottom: 10px;
+}
+/* spcl */
+.imgicon{
+    color: black;
+}
+.ap-xnam{
+    color: black;
+}
+.wpb_color-gree{
+    padding: 13px 19px 13px 19px;
+    background-color:  #50b848;
+    color: white;
+}
+.col-xs-12{
+    text-align: center;
+}
+.box-icon{
+    font-size: 30px;
+}
+.counter-number{
+    text-align: center;
+    font-size: 25px;
+}
+.chuyenmucso{
+    font-size: 25px;
+}
