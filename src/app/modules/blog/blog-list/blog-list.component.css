@@ -1,0 +1,16 @@
+*{
+  font-family: Verdana;
+}
+
+.chuyenmuc{
+  text-align: center;
+}
+.first-blog{
+  vertical-align: top;
+  display: inline-block;
+}
+
+.list-blog{
+  vertical-align: top;
+  display: inline-block;
+}
