@@ -6,11 +6,31 @@ import {AppRoutingModule} from "./app-routing.module";
 import {FormsModule} from "@angular/forms";
 
 import { HomeMainComponent } from './modules/home/home-main/home-main.component';
+import { FooterComponent } from './modules/navigation/footer/footer.component';
+import { HeaderComponent } from './modules/navigation/header/header.component';
+import { BankingComponent } from './modules/product/banking/banking.component';
+import { BusinessComponent } from './modules/product/business/business.component';
+import { GovernmentComponent } from './modules/product/government/government.component';
+import { SecurityDefenseComponent } from './modules/product/security-defense/security-defense.component';
+import { AboutUsComponent } from './modules/introduce/about-us/about-us.component';
+import { CapacityProfileComponent } from './modules/introduce/capacity-profile/capacity-profile.component';
+import { TypicalCustomersComponent } from './modules/introduce/typical-customers/typical-customers.component';
+import { ContactComponent } from './modules/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeMainComponent,
+    FooterComponent,
+    HeaderComponent,
+    BankingComponent,
+    BusinessComponent,
+    GovernmentComponent,
+    SecurityDefenseComponent,
+    AboutUsComponent,
+    CapacityProfileComponent,
+    TypicalCustomersComponent,
+    ContactComponent,
 
   ],
   imports: [
