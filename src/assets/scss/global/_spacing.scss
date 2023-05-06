@@ -7,8 +7,8 @@
     
     /* Section Padding Css */
     &--ptb_120{
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 100px;
+        padding-bottom: 0px;
 
         @media #{$tablet-device}{
             padding-top: 80px;
@@ -34,7 +34,7 @@
     }
 
     &--pb_120{
-        padding-bottom: 120px;
+        padding-bottom: 0px;
 
         @media #{$tablet-device}{
             padding-bottom: 80px;
@@ -46,7 +46,7 @@
     }
     &--ptb_100{
         padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 0px;
 
         @media #{$tablet-device}{
             padding-top: 80px;
@@ -72,7 +72,7 @@
     }
 
     &--pb_100{
-        padding-bottom: 100px;
+        padding-bottom: 0px;
 
         @media #{$tablet-device}{
             padding-bottom: 80px;
@@ -87,7 +87,7 @@
     
     &--ptb_90{
         padding-top: 90px;
-        padding-bottom: 90px;
+        padding-bottom: 0px;
 
         @media #{$tablet-device}{
             padding-top: 60px;
@@ -111,7 +111,7 @@
         }
     }
     &--pb_90{
-        padding-bottom: 90px;
+        padding-bottom: 0px;
 
         @media #{$tablet-device}{
             padding-bottom: 60px;
