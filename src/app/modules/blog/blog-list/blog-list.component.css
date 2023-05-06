@@ -4,13 +4,22 @@
 
 .chuyenmuc{
   text-align: center;
+  font-weight: bold;
+  color: #50B848;
 }
 .first-blog{
   vertical-align: top;
   display: inline-block;
+
 }
 
 .list-blog{
   vertical-align: top;
   display: inline-block;
+  float: none;
+}
+.post-title{
+  color: #50B848;
+  font-weight: bold;
+  font-size: 25px;
 }
