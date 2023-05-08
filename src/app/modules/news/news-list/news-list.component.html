@@ -47,11 +47,9 @@
               </div>
               <!-- Post Feature End -->
               <!-- Post info Start -->
-              <div class="col-md-6 first-blog">
+              <div class="col-md-6">
                 <div class="post-info lg-blog-post-info">
-                  <div class="post-categories">
-                    <a href="#">App Release</a>
-                  </div>
+
                   <h4 class="post-title font-weight--light">
                     <a href="#">Specialized Design Tools for 2019</a>
                   </h4>
@@ -73,359 +71,55 @@
             </div>
 
             <!-- Post info End -->
-
-
             <!--===== Single Blog Item End ========= -->
             <!--1-->
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom col-md-4 list-blog">
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <a href="#">
-                  <img class="img-fluid" src="assets/images/blog/blog-10-770x420.jpg" alt="Blog Images">
-                </a>
-              </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">App Release</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">Foundation 3 – the Truly Great Move</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>Responsive design seems to have gone from zero to about a thousand miles an hour in no time flat.
-                    And things are still changing fast enough that small development shops are hard-pushed to stay up
-                    to date, let alone conduct their own R&amp;D. That’s where Foundation …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-            </div>
-            <!--=========== Single Blog Item End =============-->
-            <!--2-->
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom col-md-4 list-blog">
-
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <a href="#">
-                  <img class="img-fluid" src="assets/images/blog/blog-10-770x420.jpg" alt="Blog Images">
-                </a>
-              </div>
-              <!-- Post Feature End -->
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">App Release</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">Creativity Boosting App is Here</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>You’d think by now that the concept of the code editor would be pretty mature. There’s so many
-                    out there and they’re all so similar it’s easy to imagine that the final blueprint has been
-                    found.
-                    Brackets show that even at this level there’s plenty of possibilities …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-
-            </div>
-            <!--=========== Single Blog Item End =============-->
-            <!--3-->
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom col-md-4 list-blog">
-
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <div class="flexible-image-slider-wrap">
-                  <div class="swiper-container single-flexible__container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <!-- Single flexible slider Start -->
-                        <div class="single-flexible-slider">
-                          <img src="assets/images/blog/blog-03-770x420.jpg" class="img-fluid" alt="Blog Image 01">
-                        </div>
-                        <!-- Single flexible slider End -->
+            <!--====================  Blog Area Start ====================-->
+            <div class="blog-pages-wrapper section-space--ptb_100">
+              <div class="container">
+                <div class="row">
+                  <div *ngFor="let new of news" class="col-lg-4 col-md-6  mb-30 wow move-up">
+                    <!--======= Single Blog Item Start ========-->
+                    <div class="single-blog-item blog-grid">
+                      <!-- Post Feature Start -->
+                      <div class="post-feature blog-thumbnail">
+                        <a href="blog-post-layout-one.html">
+                          <img class="img-fluid" src="{{new.imageUrl}}" alt="Blog Images">
+                        </a>
                       </div>
-                      <div class="swiper-slide">
-                        <!-- Single flexible slider Start -->
-                        <div class="single-flexible-slider">
-                          <img src="assets/images/blog/blog-02-770x420.jpg" class="img-fluid" alt="blog Image 02">
+                      <!-- Post Feature End -->
+
+                      <!-- Post info Start -->
+                      <div class="post-info lg-blog-post-info">
+                        <h5 class="post-title font-weight--bold">
+                          <a href="#">{{new.title}}</a>
+                        </h5>
+                        <div class="post-excerpt mt-15">
+                          <p>{{new.excerpt}}</p>
                         </div>
-                        <!-- Single flexible slider End -->
+
                       </div>
-                      <div class="swiper-slide">
-                        <!-- Single flexible slider Start -->
-                        <div class="single-flexible-slider">
-                          <img src="assets/images/blog/blog-01-770x420.jpg" class="img-fluid" alt="blog Image 03">
-                        </div>
-                        <!-- Single flexible slider End -->
+                      <!-- Post info End -->
+                    </div>
+                    <!--===== Single Blog Item End =========-->
+
+                </div>
+                  <div class="col-lg-12 wow move-up">
+                    <div class="ht-pagination mt-30 pagination justify-content-center">
+                      <div class="pagination-wrapper">
+
+                        <ul class="page-pagination">
+                          <li><a class="prev page-numbers" href="#">Prev</a></li>
+                          <li><a class="page-numbers current" href="#">1</a></li>
+                          <li><a class="page-numbers" href="#">2</a></li>
+                          <li><a class="next page-numbers" href="#">Next</a></li>
+                        </ul>
+
                       </div>
                     </div>
-
-                    <!-- Add Arrows -->
-                    <div class="swiper-nav-button swiper-button-next"><i class="nav-button-icon"></i></div>
-                    <div class="swiper-nav-button swiper-button-prev"><i class="nav-button-icon"></i></div>
                   </div>
-                </div>
               </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">Project Showcase</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">D&amp;AD Festival 2019’s Brand Identity</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>The three-day design festival’s campaign for this year has been designed by Village Green and
-                    focuses on an eclectic range of colourful shapes rather than the pencil icon best associated with...</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
             </div>
-            <!--=========== Single Blog Item End =============-->
-            <!--4-->
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom col-md-4 list-blog">
-
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <div class="flexible-image-slider-wrap">
-                  <div class="swiper-container single-flexible__container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <!-- Single flexible slider Start -->
-                        <div class="single-flexible-slider">
-                          <img src="assets/images/blog/blog-03-770x420.jpg" class="img-fluid" alt="Blog Image 01">
-                        </div>
-                        <!-- Single flexible slider End -->
-                      </div>
-                      <div class="swiper-slide">
-                        <!-- Single flexible slider Start -->
-                        <div class="single-flexible-slider">
-                          <img src="assets/images/blog/blog-02-770x420.jpg" class="img-fluid" alt="blog Image 02">
-                        </div>
-                        <!-- Single flexible slider End -->
-                      </div>
-                      <div class="swiper-slide">
-                        <!-- Single flexible slider Start -->
-                        <div class="single-flexible-slider">
-                          <img src="assets/images/blog/blog-01-770x420.jpg" class="img-fluid" alt="blog Image 03">
-                        </div>
-                        <!-- Single flexible slider End -->
-                      </div>
-                    </div>
-
-                    <!-- Add Arrows -->
-                    <div class="swiper-nav-button swiper-button-next"><i class="nav-button-icon"></i></div>
-                    <div class="swiper-nav-button swiper-button-prev"><i class="nav-button-icon"></i></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">Project Showcase</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">D&amp;AD Festival 2019’s Brand Identity</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>The three-day design festival’s campaign for this year has been designed by Village Green and
-                    focuses on an eclectic range of colourful shapes rather than the pencil icon best associated with...</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-            </div>
-            <!--=========== Single Blog Item End =============-->
-            <!-- 5-->
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom col-md-4 list-blog">
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <a href="#">
-                  <img class="img-fluid" src="assets/images/blog/blog-10-770x420.jpg" alt="Blog Images">
-                </a>
-              </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">App Release</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">Foundation 3 – the Truly Great Move</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>Responsive design seems to have gone from zero to about a thousand miles an hour in no time flat.
-                    And things are still changing fast enough that small development shops are hard-pushed to stay up
-                    to date, let alone conduct their own R&amp;D. That’s where Foundation …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-            </div>
-            <!--=========== Single Blog Item End =============-->
-            <!--            6-->
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom col-md-4 list-blog">
-
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <a href="#">
-                  <img class="img-fluid" src="assets/images/blog/blog-10-770x420.jpg" alt="Blog Images">
-                </a>
-              </div>
-              <!-- Post Feature End -->
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">App Release</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">Creativity Boosting App is Here</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>You’d think by now that the concept of the code editor would be pretty mature. There’s so many
-                    out there and they’re all so similar it’s easy to imagine that the final blueprint has been
-                    found.
-                    Brackets show that even at this level there’s plenty of possibilities …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-
-            </div>
-            <!--=========== Single Blog Item End =============-->
+            <!--====================  Blog Area End  ====================-->
           </div>
         </div>
 

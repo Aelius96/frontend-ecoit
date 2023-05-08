@@ -21,13 +21,13 @@ import {BlogListComponent} from "./modules/blog/blog-list/blog-list.component";
 import {NewsListComponent} from "./modules/news/news-list/news-list.component";
 import {RecruitListComponent} from "./modules/recruit/recruit-list/recruit-list.component";
 import {PostListComponent} from "./modules/post/post-list/post-list.component";
+import { SideBarComponent } from './modules/navigation/side-bar/side-bar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeMainComponent,
-
     FooterComponent,
     HeaderComponent,
     BankingComponent,
@@ -41,7 +41,8 @@ import {PostListComponent} from "./modules/post/post-list/post-list.component";
     BlogListComponent,
     NewsListComponent,
     RecruitListComponent,
-    PostListComponent
+    PostListComponent,
+    SideBarComponent
 
 
   ],
