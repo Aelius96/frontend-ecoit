@@ -16,6 +16,7 @@ import { AboutUsComponent } from './modules/introduce/about-us/about-us.componen
 import { CapacityProfileComponent } from './modules/introduce/capacity-profile/capacity-profile.component';
 import { TypicalCustomersComponent } from './modules/introduce/typical-customers/typical-customers.component';
 import { ContactComponent } from './modules/contact/contact.component';
+import { ErrorComponent } from './modules/error/error.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ContactComponent } from './modules/contact/contact.component';
     CapacityProfileComponent,
     TypicalCustomersComponent,
     ContactComponent,
+    ErrorComponent,
 
   ],
   imports: [

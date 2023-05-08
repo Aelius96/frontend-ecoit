@@ -10,9 +10,10 @@ import { AboutUsComponent } from "./modules/introduce/about-us/about-us.componen
 import { CapacityProfileComponent } from "./modules/introduce/capacity-profile/capacity-profile.component";
 import { TypicalCustomersComponent } from "./modules/introduce/typical-customers/typical-customers.component";
 import { ContactComponent } from "./modules/contact/contact.component";
+import { ErrorComponent } from "./modules/error/error.component";
 
 const routes: Routes =[
-  { path:'',redirectTo:'/trang-chu',pathMatch:'full',},
+  { path:'',redirectTo:'/trang-chu',pathMatch:'full',}, // full khớp hoàn toàn 
   {path:'trang-chu', component: HomeMainComponent},
   //sản phẩm
   { path: 'khach-hang-chinh-phu' , component:GovernmentComponent },
@@ -27,6 +28,7 @@ const routes: Routes =[
 
   //
   {path: 'lien-he' , component: ContactComponent},
+  {path: '404' , component:ErrorComponent},
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
