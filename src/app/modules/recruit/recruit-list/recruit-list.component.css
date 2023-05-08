@@ -1,8 +1,13 @@
 .chuyenmuc{
   text-align: center;
+  font-family: Verdana;
+  font-weight: bold;
+  color: #50b848;
 }
 
-.recuit-info-blog{
-  vertical-align: middle;
-  display: inline-block;
+.post-title{
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #50b848;
 }
