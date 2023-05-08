@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="row">
   <div class="col-md-12">
     <div id="content-wrapper" class="is-vc">
@@ -21,7 +22,7 @@
 <div class="col-md-12">
   <div class="my-4">
     <div class="wdc-heading style-1 text-left">
-      <h2 class="chuyenmuc">News</h2>
+      <h2 class="chuyenmuc">Blog</h2>
       <hr>
     </div>
   </div>
@@ -46,11 +47,9 @@
               </div>
               <!-- Post Feature End -->
               <!-- Post info Start -->
-              <div class="col-md-6 first-blog">
+              <div class="col-md-6">
                 <div class="post-info lg-blog-post-info">
-                  <div class="post-categories">
-                    <a href="#">App Release</a>
-                  </div>
+
                   <h4 class="post-title font-weight--light">
                     <a href="#">Specialized Design Tools for 2019</a>
                   </h4>
@@ -72,437 +71,55 @@
             </div>
 
             <!-- Post info End -->
-
-
             <!--===== Single Blog Item End ========= -->
-
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom col-md-4 list-blog">
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <a href="#">
-                  <img class="img-fluid" src="assets/images/blog/blog-10-770x420.jpg" alt="Blog Images">
-                </a>
-              </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">App Release</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">Foundation 3 – the Truly Great Move</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>Responsive design seems to have gone from zero to about a thousand miles an hour in no time flat.
-                    And things are still changing fast enough that small development shops are hard-pushed to stay up
-                    to date, let alone conduct their own R&amp;D. That’s where Foundation …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-            </div>
-            <!--=========== Single Blog Item End =============-->
-
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom col-md-4 list-blog">
-
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <a href="#">
-                  <img class="img-fluid" src="assets/images/blog/blog-10-770x420.jpg" alt="Blog Images">
-                </a>
-              </div>
-              <!-- Post Feature End -->
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">App Release</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">Creativity Boosting App is Here</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>You’d think by now that the concept of the code editor would be pretty mature. There’s so many
-                    out there and they’re all so similar it’s easy to imagine that the final blueprint has been
-                    found.
-                    Brackets show that even at this level there’s plenty of possibilities …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-
-            </div>
-            <!--=========== Single Blog Item End =============-->
-
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom col-md-4 list-blog">
-
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <div class="flexible-image-slider-wrap">
-                  <div class="swiper-container single-flexible__container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <!-- Single flexible slider Start -->
-                        <div class="single-flexible-slider">
-                          <img src="assets/images/blog/blog-03-770x420.jpg" class="img-fluid" alt="Blog Image 01">
-                        </div>
-                        <!-- Single flexible slider End -->
+            <!--1-->
+            <!--====================  Blog Area Start ====================-->
+            <div class="blog-pages-wrapper section-space--ptb_100">
+              <div class="container">
+                <div class="row">
+                  <div *ngFor="let new of news" class="col-lg-4 col-md-6  mb-30 wow move-up">
+                    <!--======= Single Blog Item Start ========-->
+                    <div class="single-blog-item blog-grid">
+                      <!-- Post Feature Start -->
+                      <div class="post-feature blog-thumbnail">
+                        <a href="blog-post-layout-one.html">
+                          <img class="img-fluid" src="{{new.imageUrl}}" alt="Blog Images">
+                        </a>
                       </div>
-                      <div class="swiper-slide">
-                        <!-- Single flexible slider Start -->
-                        <div class="single-flexible-slider">
-                          <img src="assets/images/blog/blog-02-770x420.jpg" class="img-fluid" alt="blog Image 02">
+                      <!-- Post Feature End -->
+
+                      <!-- Post info Start -->
+                      <div class="post-info lg-blog-post-info">
+                        <h5 class="post-title font-weight--bold">
+                          <a href="#">{{new.title}}</a>
+                        </h5>
+                        <div class="post-excerpt mt-15">
+                          <p>{{new.excerpt}}</p>
                         </div>
-                        <!-- Single flexible slider End -->
+
                       </div>
-                      <div class="swiper-slide">
-                        <!-- Single flexible slider Start -->
-                        <div class="single-flexible-slider">
-                          <img src="assets/images/blog/blog-01-770x420.jpg" class="img-fluid" alt="blog Image 03">
-                        </div>
-                        <!-- Single flexible slider End -->
-                      </div>
+                      <!-- Post info End -->
                     </div>
+                    <!--===== Single Blog Item End =========-->
 
-                    <!-- Add Arrows -->
-                    <div class="swiper-nav-button swiper-button-next"><i class="nav-button-icon"></i></div>
-                    <div class="swiper-nav-button swiper-button-prev"><i class="nav-button-icon"></i></div>
-                  </div>
                 </div>
-              </div>
-              <!-- Post Feature End -->
+                  <div class="col-lg-12 wow move-up">
+                    <div class="ht-pagination mt-30 pagination justify-content-center">
+                      <div class="pagination-wrapper">
 
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">Project Showcase</a>
-                </div>
+                        <ul class="page-pagination">
+                          <li><a class="prev page-numbers" href="#">Prev</a></li>
+                          <li><a class="page-numbers current" href="#">1</a></li>
+                          <li><a class="page-numbers" href="#">2</a></li>
+                          <li><a class="next page-numbers" href="#">Next</a></li>
+                        </ul>
 
-                <h4 class="post-title font-weight--light">
-                  <a href="#">D&amp;AD Festival 2019’s Brand Identity</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>The three-day design festival’s campaign for this year has been designed by Village Green and
-                    focuses on an eclectic range of colourful shapes rather than the pencil icon best associated with...</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-            </div>
-            <!--=========== Single Blog Item End =============-->
-
-            <!--========== Single Blog Item Start ==========-->
-            <div class="single-blog-item lg-blog-item border-bottom">
-
-              <!-- Post Feature Start -->
-              <div class="post-feature post-link">
-                <h5 class="link-text">
-                  <a href="https://themeforest.net/user/bootxperts/portfolio"
-                     target="_blank">https://themeforest.net/user/bootxperts/portfolio</a>
-                </h5>
-              </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">Project Showcase</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">Slack’s Most Famous Rebranding Campaign</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>The collaborative working tool, used by employees to chat and share projects, has a new
-                    “simplified” logo with a smaller color palette, that does away with the brand’s characteristic
-                    slanted hashtag symbol. It’s through mistakes that you actually can grow. You have to get bad …
-                  </p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-            </div>
-            <!--=========== Single Blog Item End =============-->
-
-            <!--======= Single Blog Item Start ========-->
-            <div class="single-blog-item lg-blog-item border-bottom">
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <a href="#">
-                  <img class="img-fluid" src="assets/images/blog/blog-09-770x420.jpg" alt="Blog Images">
-                </a>
-              </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">Web Design</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">Designers’ Identities & Social Unconscious Bias</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>Creative jobs website and networking platform The Dots has launched the “bias blocker”, a new
-                    browsing mode that stops employers being able to see candidates’ photos, names, education and
-                    employment history, on the basis that they should be judged on the “quality of their work” …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-            </div>
-            <!--===== Single Blog Item End =========-->
-
-            <!--======= Single Blog Item Start ========-->
-            <div class="single-blog-item lg-blog-item border-bottom">
-              <!-- Post Feature Start -->
-              <div class="post-feature post-audio">
-                <iframe class="post-audio-box" title="raindrop, droptop by monte booker"
-                        src="https://w.soundcloud.com/player/?visual=true&url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F302046775&show_artwork=true&maxwidth=640&maxheight=960&dnt=1&show_comments=false"></iframe>
-              </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">Project Showcase</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">New Dubai Nike Shop Redesign</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>A new Nike store has launched at the Dubai Mall in Dubai, centered around the concept of using
-                    Arabic script to convey Nike’s brand motto throughout the store design. Get rid of everything that
-                    is not essential to making a point. – Christoph Niemann Mohamed …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-            </div>
-            <!--===== Single Blog Item End =========-->
-
-            <!--======= Single Blog Item Start ========-->
-            <div class="single-blog-item lg-blog-item border-bottom">
-              <!-- Post Feature Start -->
-              <div class="post-feature post-audio video-popup">
-                <a href="https://vimeo.com/18886355" class="video-link mt-30">
-                  <div class="single-popup-wrap">
-                    <img class="img-fluid" src="assets/images/blog/blog-03-770x420.jpg" alt="">
-                    <div class="ht-popup-video video-button video-overlay">
-                      <div class="video-button__two">
-                        <div class="video-play">
-                          <span class="video-play-icon"></span>
-                        </div>
                       </div>
                     </div>
                   </div>
-                </a>
               </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">Project Showcase</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">New Dubai Nike Shop Redesign</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>A new Nike store has launched at the Dubai Mall in Dubai, centered around the concept of using
-                    Arabic script to convey Nike’s brand motto throughout the store design. Get rid of everything that
-                    is not essential to making a point. – Christoph Niemann Mohamed …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
             </div>
-            <!--===== Single Blog Item End =========-->
-
-            <!--======= Single Blog Item Start ========-->
-            <div class="single-blog-item lg-blog-item border-bottom">
-              <!-- Post Feature Start -->
-              <div class="post-feature blog-thumbnail">
-                <a href="#">
-                  <img class="img-fluid" src="assets/images/blog/blog-01-770x420.jpg" alt="Blog Images">
-                </a>
-              </div>
-              <!-- Post Feature End -->
-
-              <!-- Post info Start -->
-              <div class="post-info lg-blog-post-info">
-                <div class="post-categories">
-                  <a href="#">Web Design</a>
-                </div>
-
-                <h4 class="post-title font-weight--light">
-                  <a href="#">Design Festival Offset Dublin in 2019</a>
-                </h4>
-
-                <div class="post-meta mt-20">
-                  <div class="post-author">
-                    <a href="#">
-                      <img class="img-fluid avatar-96" src="assets/images/team/admin.png" alt=""> Harry Ferguson
-                    </a>
-                  </div>
-                  <div class="post-date">
-                    <span class="far fa-calendar meta-icon"></span>
-                    January 14, 2019
-                  </div>
-                </div>
-
-                <div class="post-excerpt mt-15">
-                  <p>As a result, along with the larger corporate-backed applications, we have a huge host of small
-                    tools and libraries, each designed to solve a particular problem or preserve a certain set of
-                    possibilities. A couple of these projects have become institutions: Modernizr, keeping the
-                    technical …</p>
-                </div>
-
-                <div class="post-read-more mt-20">
-                  <a href="#" class="ht-btn ht-btn-sm">
-                    <span class="btn-text">Read more </span>
-                  </a>
-                </div>
-              </div>
-              <!-- Post info End -->
-            </div>
-            <!--===== Single Blog Item End =========-->
-
+            <!--====================  Blog Area End  ====================-->
           </div>
         </div>
 
@@ -512,90 +129,4 @@
   <!--====================  Blog Area End  ====================-->
 
 </div>
-
-
-<!--====================  footer area ====================-->
-<div class="footer-area-wrapper">
-  <div class="footer-area section-space--ptb_90 border-top">
-    <div class="container">
-      <div class="row footer-widget-wrapper">
-        <div class="col-lg-4 col-md-6 footer-widget">
-          <div class="footer-widget__logo mb-30">
-            <img src="assets/images/logo/logo-dark.png" class="img-fluid" alt="">
-          </div>
-          <ul class="footer-widget__list">
-            <li>58 Howard Street #2 San Francisco, CA 941</li>
-            <li><a href="#" class="hover-style-link">contact@aeroland.com</a></li>
-            <li><a href="#" class="hover-style-link">(+68)1221 09876</a></li>
-            <li><a href="#" class="hover-style-link hover-style-link--green">www.website.com</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 footer-widget">
-          <h6 class="footer-widget__title  mb-20">Who we are</h6>
-          <ul class="footer-widget__list">
-            <li><a href="#" class="hover-style-link">About us</a></li>
-            <li><a href="#" class="hover-style-link">Before you go</a></li>
-            <li><a href="#" class="hover-style-link">Online check in</a></li>
-            <li><a href="#" class="hover-style-link">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6 footer-widget">
-          <h6 class="footer-widget__title mb-20">Quick links</h6>
-          <ul class="footer-widget__list">
-            <li><a href="#" class="hover-style-link">Pick up locations</a></li>
-            <li><a href="#" class="hover-style-link">Terms of Payment</a></li>
-            <li><a href="#" class="hover-style-link">Privacy Policy</a></li>
-            <li><a href="#" class="hover-style-link">Where to Find Us</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 offset-lg-1 footer-widget">
-          <div class="twitter-feed-slider">
-            <div class="swiper-container twitter-feed-slider__container">
-              <div class="swiper-wrapper twitter-feed-slider__wrapper">
-                <div class="swiper-slide twitter-feed-slider__single">
-                  <div class="tweet">
-                    <div class="tweet__text">
-                      "The ocean never ceases to amaze!" Feature: Ben Klea
-                      <a href="https://t.co/jSRMsZAdPW" target="_blank">https://t.co/jSRMsZAdPW</a>
-                      <a href="https://t.co/2iDReuyPMt" target="_blank">https://t.co/2iDReuyPMt</a>
-                    </div>
-                    <div class="tweet__info">
-                      <h6 class="tweet__heading">Unsplash</h6>
-                      <span class="tweet__date">May 07, 2019</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright-area border-top section-space--ptb_30">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-left">
-          <span class="copyright-text">© 2019 AeroLand. All Rights Reserved.</span>
-        </div>
-        <div class="col-md-6 text-center text-md-right">
-          <ul class="list ht-social-networks solid-rounded-icon">
-            <li class="item">
-              <a href="#" target="_blank" class="social-link"> <i class="fab fa-facebook social-link-icon"></i> </a>
-            </li>
-            <li class="item">
-              <a href="#" target="_blank" class="social-link"> <i class="fab fa-twitter social-link-icon"></i> </a>
-            </li>
-            <li class="item">
-              <a href="#" target="_blank" class="social-link"> <i class="fab fa-instagram social-link-icon"></i> </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--====================  End of footer area  ====================-->
-
-
-
+<app-footer></app-footer>

@@ -1,9 +1,9 @@
 
 .containerr{
     color: #bababa;
-    padding: 0px 15px 0px 15px; 
+    padding: 0px 15px 0px 15px;
     margin-left: 80px;
-     margin-right: 80px; 
+     margin-right: 80px;
 }
 .footer-wrapper{
     padding: 80px 0px 40px 0px;
@@ -17,10 +17,12 @@
     font-size: 18px;
     text-align: justify;
     margin-bottom: 20px;
+    font-family: Verdana;
+    font-weight: bold;
 }
 .hrr{
     background-color: #d5cccc;
-    
+
 }
 .list{
     padding-bottom: 1px;
@@ -55,5 +57,5 @@
 .footer-preview{
     background-color: #303030;
     padding-top: 50px;
-    
+
 }
