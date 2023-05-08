@@ -16,93 +16,21 @@
             <div class="container">
                 <div class="row pricing-table-one" >
                     <!-- 1 -->
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 pricing-table pricing-table--popular  wow move-up" style="background-color: rgba(189, 191, 187, 0);">
+                    <div *ngFor="let icon of icons" class="col-12 col-md-6 col-lg-6 col-xl-3 pricing-table pricing-table--popular  wow move-up" style="background-color: rgba(189, 191, 187, 0);">
                         <div class="pricing-table__innerrr" >
-                            <div class="post-item" >
-                                    <a href="/eco-ecm/" style="text-align: center;">
-                                    <div class="imgicon">
-                                        <img  src="https://ecoit.asia/wp-content/uploads/2019/08/ECM-01-250x200.png" class="large wp-post-image" alt="" loading="lazy"><br><b>EcoECM</b>
-                                        <span class="ap-xnam"><p>Phần mềm quản lý tài liệu</p>
-                                        </span>
-                                    </div>
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 2 -->
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 pricing-table pricing-table--popular  wow move-up" style=" height: max-content ;background-color: rgba(189, 191, 187, 0);">
-                        <div class="pricing-table__innerrr" >
-                            <div class="post-item">
-                                <a href="/eco-invoice/">
-                                    <div class="imgicon">
-                                        <img  src="https://ecoit.asia/wp-content/uploads/2020/11/kisspng-computer-icons-invoice-receipt-commerce-portfolio-5ac9a4a2354d51.3098672615231643222183-250x200.png" 
+                            <div class="post-item"  >
+                                <a href="{{icon.link}}" >
+                                    <div class="imgicon" >
+                                        <img src="{{icon.imageUrl}}" 
                                         class="large wp-post-image" alt="" loading="lazy" 
-                                        srcset="https://ecoit.asia/wp-content/uploads/2020/11/kisspng-computer-icons-invoice-receipt-commerce-portfolio-5ac9a4a2354d51.3098672615231643222183-250x200.png 250w, https://ecoit.asia/wp-content/uploads/2020/11/kisspng-computer-icons-invoice-receipt-commerce-portfolio-5ac9a4a2354d51.3098672615231643222183-512x410.png 512w" 
-                                        sizes="(max-width: 250px) 100vw, 250px"><br><b>ECO-INVOICE</b>
-                                        <span class="ap-xnam"><p>Phần mềm hóa đơn điện tử ECO –  Invoice</p>
-                                        </span>
-                                    </div>
-                                </a>
-                               </div>
-                        </div>
-                    </div>
-                    <!-- 3 -->
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 pricing-table pricing-table--popular  wow move-up" style="background-color: rgba(189, 191, 187, 0);">
-                        <div class="pricing-table__innerrr" >
-                            <div class="post-item">
-                                <a href="/eco-ocr/">
-                                    <div class="imgicon">
-                                    <img  src="https://ecoit.asia/wp-content/uploads/2019/08/OCR-250x200.png" class="large wp-post-image" alt="" loading="lazy"><br><b>EcoOCR</b>
-                                    <span class="ap-xnam"><p>Phần mềm nhận dạng, bóc tách văn bản tiếng Việt</p>
-                                    </span>
-                                    </div>
-                                </a>
-                               </div>
-                        </div>
-                    </div>
-                    <!-- 4  -->
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 pricing-table pricing-table--popular  wow move-up" style=" background-color: rgba(189, 191, 187, 0);">
-                        <div class="pricing-table__innerrr" >
-                            <div class="post-item">
-                                <a href="/esb/">
-                                    <div class="imgicon">
-                                        <img  src="https://ecoit.asia/wp-content/uploads/2019/08/ESB-01-250x200.png" class="large wp-post-image" alt="" loading="lazy"><br><b>ESB</b>
-                                        <span class="ap-xnam"><p>Giải pháp trục tích hợp</p>
-                                        </span>
-                                    </div>
-                                </a>
-                               </div>
-                        </div>
-                    </div>
-                    <!-- 5 -->
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 pricing-table pricing-table--popular  wow move-up" style=" background-color: rgba(189, 191, 187, 0);">
-                        <div class="pricing-table__innerrr" >
-                            <div class="post-item">
-                                <a href="./b-i">
-                                    <div class="imgicon">
-                                        <img  src="https://ecoit.asia/wp-content/uploads/2019/08/BI-01-250x200.png" class="large wp-post-image" alt="" loading="lazy"><br><b>Business Intelligence (BI)</b>
-                                        <span class="ap-xnam"><p>Hệ thống phân tích dữ liệu và quản trị thông minh</p>
-                                        </span>
-                                    </div>
-                                </a>
-                               </div>
-                        </div>
-                    </div>
-                    <!-- 6 -->
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3 pricing-table pricing-table--popular  wow move-up" style=" background-color: rgba(189, 191, 187, 0);">
-                        <div class="pricing-table__innerrr" >
-                            <div class="post-item">
-                                <a href="/acunetix/">
-                                    <div class="imgicon">
-                                        <img  src="https://ecoit.asia/wp-content/uploads/2019/08/ACUNETIX-01-250x200.png" class="large wp-post-image" alt="" loading="lazy"><br><b>Acunetix</b>
-                                        <span class="ap-xnam"><p>Phần mềm kiểm toán an ninh Web</p>
+                                        ><br><b>{{icon.title}}</b>
+                                        <span class="ap-xnam"><p>{{icon.content}}</p>
                                         </span>
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <!-- 7 -->
                 </div>
             </div>
         </div>

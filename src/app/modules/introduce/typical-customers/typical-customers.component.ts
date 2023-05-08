@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./typical-customers.component.css']
 })
 export class TypicalCustomersComponent {
+
+
   customers = [
     {
       id: 1,
@@ -51,5 +53,6 @@ export class TypicalCustomersComponent {
       id: 11,
       customerImage: 'https://ecoit.asia/wp-content/uploads/2019/08/bokhoahoccn.jpg'
     },
+
   ]
 }

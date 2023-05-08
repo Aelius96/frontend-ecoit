@@ -11,13 +11,17 @@ import { AboutUsComponent } from "./modules/introduce/about-us/about-us.componen
 import { CapacityProfileComponent } from "./modules/introduce/capacity-profile/capacity-profile.component";
 import { TypicalCustomersComponent } from "./modules/introduce/typical-customers/typical-customers.component";
 import { ContactComponent } from "./modules/contact/contact.component";
+<<<<<<< HEAD
+import { ErrorComponent } from "./modules/error/error.component";
+=======
 import {NewsListComponent} from "./modules/news/news-list/news-list.component";
 import {RecruitListComponent} from "./modules/recruit/recruit-list/recruit-list.component";
 import {PostListComponent} from "./modules/post/post-list/post-list.component";
 import {BlogListComponent} from "./modules/blog/blog-list/blog-list.component";
+>>>>>>> 6124478cad044a628b3a08391ee8c0c31cc9f4e1
 
 const routes: Routes =[
-  { path:'',redirectTo:'/trang-chu',pathMatch:'full',},
+  { path:'',redirectTo:'/trang-chu',pathMatch:'full',}, // full khớp hoàn toàn 
   {path:'trang-chu', component: HomeMainComponent},
   //sản phẩm
   { path: 'khach-hang-chinh-phu' , component:GovernmentComponent },
@@ -32,11 +36,15 @@ const routes: Routes =[
 
   //
   {path: 'lien-he' , component: ContactComponent},
+<<<<<<< HEAD
+  {path: '404' , component:ErrorComponent},
+=======
   {path:'news',component:NewsListComponent},
   {path:'recruit',component: RecruitListComponent},
   {path:'post', component: PostListComponent},
   {path:'blog', component: BlogListComponent}
 
+>>>>>>> 6124478cad044a628b3a08391ee8c0c31cc9f4e1
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
