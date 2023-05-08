@@ -1,13 +1,14 @@
-
 .chuyenmuc{
     text-align: center ;
-      font-size: 30px;
-      margin-top: 20px;
-      font-family: initial;
-  }
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: #50b848;
+}
   #gachchan{
     width: 100px;
-    margin-top: 20px; 
+    margin-top: 20px;
     border-top: 1px solid rgb(0, 0, 0);
 }
 /*  */
@@ -18,13 +19,17 @@
 .pricing-table__inner{
     padding: 0px 0px 0px 0px;
     width: 100%;
+
 }
 .pricing-table__title{
-    letter-spacing: -.4px; 
-    align-content: center; 
+    letter-spacing: -.4px;
+    align-content: center;
     color: rgb(0, 0, 0);
-     margin-top: 10px; 
+     margin-top: 10px;
      margin-bottom: 10px;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 18px;
 }
 /* spcl */
 .imgicon{
@@ -60,7 +65,7 @@
     content: "";
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   right: 0;
   width: 0;
   height: 100%;
@@ -73,32 +78,34 @@
   width: 100%;
   left: 0;
   right: 0;
-} 
+}
 .col-xs-12{
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
     width: 100%;
-    
+
 }
 .service-link{
     padding-left: 50px;
     padding-right: 50px;
     border: 30px 30px 30px 30px;
-    
+
     text-align: center;
 
 }
 .wpb_color-gree{
-    
+
     padding: 13px 19px 13px 19px;
     color: rgb(255, 255, 255);
 }
 /* tttd */
 #text{
     text-transform: uppercase;
-    color: #5748b8df;
+    color: #50b848;
+    font-weight: bold;
+    font-family: Verdana;
 }
 @media (min-width: 768px){
     .col-sm-6{
@@ -110,8 +117,15 @@
 .h7tttd{
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: Verdana;
     font-weight: bold;
+    color: #50b848;
 }
 .ptdtt{
     padding-bottom: 20px;
 }
+
+.img-fluid{
+  padding-right: 50px;
+}
+
