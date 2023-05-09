@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./customer-product.component.css']
 })
 export class CustomerProductComponent {
-  customer = [
-    {
+  customer =
+    [{
       id: 1,
       backgroundColor:'#732dec',
       cusIcon: 'fa fa-bank',
