@@ -6,8 +6,8 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent {
-  customer = [
 
+  customer = [
     {
       id: 1,
       backgroundColor:'#732dec',
@@ -41,5 +41,4 @@ export class CustomerListComponent {
       url:'khach-hang-an-ninh-quoc-phong'
     },
   ]
-
 }
