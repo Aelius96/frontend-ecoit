@@ -95,11 +95,7 @@
     text-align: center;
 
 }
-.wpb_color-gree{
 
-    padding: 13px 19px 13px 19px;
-    color: rgb(255, 255, 255);
-}
 /* tttd */
 #text{
     text-transform: uppercase;
@@ -117,7 +113,7 @@
 .h7tttd{
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: Verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: #50b848;
 }
@@ -128,4 +124,5 @@
 .img-fluid{
   padding-right: 50px;
 }
+
 

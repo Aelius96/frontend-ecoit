@@ -25,6 +25,17 @@ import {NewsListComponent} from "./modules/news/news-list/news-list.component";
 import {RecruitListComponent} from "./modules/recruit/recruit-list/recruit-list.component";
 import {PostListComponent} from "./modules/post/post-list/post-list.component";
 import { SideBarComponent } from './modules/navigation/side-bar/side-bar.component';
+import { CustomerListComponent } from './modules/customer/customer-list/customer-list.component';
+import { AboutHomeComponent } from './modules/about/about-home/about-home.component';
+import { ProductListComponent } from './modules/product/product-list/product-list.component';
+
+import {NumberHomeComponent} from "./modules/typical/number/number-home/number-home.component";
+import { GalleryHomeComponent } from './modules/typical/gallery/gallery-home/gallery-home.component';
+
+import { RecruitNewsComponent } from './modules/home/group/recruit-news/recruit-news.component';
+import { CusTypicalHomeComponent } from './modules/typical/customer/cus-typical-home/cus-typical-home.component';
+import { SliderListComponent } from './modules/sliders/slider-list/slider-list.component';
+
 
 
 @NgModule({
@@ -46,7 +57,16 @@ import { SideBarComponent } from './modules/navigation/side-bar/side-bar.compone
     NewsListComponent,
     RecruitListComponent,
     PostListComponent,
-    SideBarComponent
+    SideBarComponent,
+    CustomerListComponent,
+    AboutHomeComponent,
+    ProductListComponent,
+    NumberHomeComponent,
+    GalleryHomeComponent,
+    RecruitNewsComponent,
+    CusTypicalHomeComponent,
+    SliderListComponent,
+
 
   ],
   imports: [
