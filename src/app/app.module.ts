@@ -35,6 +35,8 @@ import { GalleryHomeComponent } from './modules/typical/gallery/gallery-home/gal
 import { RecruitNewsComponent } from './modules/home/group/recruit-news/recruit-news.component';
 import { CusTypicalHomeComponent } from './modules/typical/customer/cus-typical-home/cus-typical-home.component';
 import { SliderListComponent } from './modules/sliders/slider-list/slider-list.component';
+import { CustomerProductComponent } from './modules/group/customer-product/customer-product.component';
+
 
 
 
@@ -66,7 +68,7 @@ import { SliderListComponent } from './modules/sliders/slider-list/slider-list.c
     RecruitNewsComponent,
     CusTypicalHomeComponent,
     SliderListComponent,
-
+    CustomerProductComponent,
 
   ],
   imports: [

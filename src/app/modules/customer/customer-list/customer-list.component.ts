@@ -14,6 +14,7 @@ export class CustomerListComponent {
       cusIcon: 'fa fa-bank',
       cusTitle: 'KHÁCH HÀNG CHÍNH PHỦ',
       cusDescription: 'Bao gồm các Bộ, Ban, Ngành và các cơ quan nhà nước khác',
+      url:'khach-hang-chinh-phu'
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ export class CustomerListComponent {
       cusIcon: 'fa fa-slideshare',
       cusTitle: 'KHÁCH HÀNG DOANH NGHIỆP',
       cusDescription: 'Bao gồm các tập đoàn, doanh nghiệp lớn trong và ngoài nước',
+      url:'khach-hang-doanh-nghiep'
     },
     {
       id: 3,
@@ -28,6 +30,7 @@ export class CustomerListComponent {
       cusIcon: 'fa fa-dollar',
       cusTitle: 'KHÁCH HÀNG TÀI CHÍNH-NGÂN HÀNG',
       cusDescription: 'Bao gồm các ngân hàng, công ty tài chính',
+      url:'khach-hang-tai-chinh-ngan-hang'
     },
     {
       id: 4,
@@ -35,6 +38,7 @@ export class CustomerListComponent {
       cusIcon: 'fa fa-shield',
       cusTitle: 'KHÁCH HÀNG AN NINH - QUỐC PHÒNG',
       cusDescription: 'Bao gồm các cơ quan, đơn vị thuộc Bộ Công An và Bộ Quốc Phòng',
+      url:'khach-hang-an-ninh-quoc-phong'
     },
   ]
 
