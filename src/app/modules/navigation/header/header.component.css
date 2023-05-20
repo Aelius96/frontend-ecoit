@@ -7,10 +7,10 @@
 
     height: 120px;
 
-    -webkit-animation: .95s ease-in-out 0s normal none 1 running fadeInDown;
-            animation: .95s ease-in-out 0s normal none 1 running fadeInDown;
-    z-index: 999;
-    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    /*-webkit-animation: .95s ease-in-out 0s normal none 1 running fadeInDown;*/
+    /*        animation: .95s ease-in-out 0s normal none 1 running fadeInDown;*/
+    /*z-index: 999;*/
+    /*-webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);*/
     -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     background-color: #000000a8;
@@ -34,6 +34,9 @@
 }
 .dropdown:hover>.dropdown-menu {
   display: block;
+}
+.header__navigation .navigation-menu > ul > li > a {
+  padding: 5px 15px;
 }
 
 .dropdown>.dropdown-toggle:active {
