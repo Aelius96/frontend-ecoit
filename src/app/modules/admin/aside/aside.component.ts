@@ -29,7 +29,7 @@ export class AsideComponent {
     {
       id:4,
       tittle:'Khách hàng',
-      a: 'news',
+      a: 'customer',
       icon:'far fa-handshake'
     },
     {
