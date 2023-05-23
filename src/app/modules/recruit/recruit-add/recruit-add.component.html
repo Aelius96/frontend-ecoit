@@ -11,7 +11,7 @@
         </div>
         <div class="update_box">
           <span><strong>Mô tả</strong></span>
-          <input type="text" ng-Model="new.description" name="description">
+          <input type="text" ng-Model="recruit.description" name="description">
         </div>
         <div class="update_box">
           <span><strong>Thẻ</strong></span>
@@ -27,25 +27,14 @@
       <div class="col-lg-8">
         <div class="update_box">
           <span><strong>Tiêu đề</strong></span>
-          <input type="text" name="title" ng-Model="new.title" required>
+          <input type="text" name="title" ng-Model="recruit.title" required>
         </div>
         <div class="update_box">
           <span><strong>Nội dung</strong></span>
-          <div class="ckeditorContaniner" id="editor">
-<!--            <ckeditor [editor]="Editor"  [data]="new.content"></ckeditor>-->
-            <ckeditor ngModel="new.content" [config]="ckeConfig" ></ckeditor>
-          </div>
+          <ckeditor name="content" [(ngModel)]="recruit.content" [ngModelOptions]="{standalone: true}" [config]="ckeConfig" [data]="recruit.content"></ckeditor>
         </div>
       </div>
     </div>
   </div>
 </form>
 
-
-<!--<script>-->
-<!--  InlineEditor-->
-<!--    .create( document.querySelector( '#editor' ) )-->
-<!--    .catch( error => {-->
-<!--      console.error( error );-->
-<!--    } );-->
-<!--</script>-->

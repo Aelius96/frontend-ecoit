@@ -4,13 +4,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 150px;
 
-    height: 120px;
-
-    /*-webkit-animation: .95s ease-in-out 0s normal none 1 running fadeInDown;*/
-    /*        animation: .95s ease-in-out 0s normal none 1 running fadeInDown;*/
-    /*z-index: 999;*/
-    /*-webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);*/
     -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     background-color: #000000a8;
@@ -31,7 +26,16 @@
 }
 .submenu{
   padding-top: 0px;
+  padding-bottom: 0px
 }
+.item-li{
+  color: #50b848;
+}
+.item-li:hover{
+  color: white;
+  background-color: #50b848;
+}
+
 .dropdown:hover>.dropdown-menu {
   display: block;
 }

@@ -52,6 +52,10 @@
 }
 .btnn{
   border: 0px ;
+  width: 27px;
+}
+.btnn:hover{
+  background-color: rgba(82, 75, 143, 0.4);
 }
 .content-box{
   font-weight: bolder;
