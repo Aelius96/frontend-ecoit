@@ -49,6 +49,12 @@ import { BlogAddComponent } from './modules/blog/blog-add/blog-add.component';
 import { NewsControlComponent } from './modules/news/news-control/news-control.component';
 import { NewsAddComponent } from './modules/news/news-add/news-add.component';
 import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
+import { RecuitControlComponent } from './modules/recruit/recuit-control/recuit-control.component';
+import { RecruitAddComponent } from './modules/recruit/recruit-add/recruit-add.component';
+import { CusotmerControlComponent } from './modules/customer/cusotmer-control/cusotmer-control.component';
+import { GalleryControlComponent } from './modules/typical/gallery/gallery-control/gallery-control.component';
+import { GalleryAddComponent } from './modules/typical/gallery/gallery-add/gallery-add.component';
+import { CustomerAddComponent } from './modules/customer/customer-add/customer-add.component';
 
 
 @NgModule({
@@ -93,6 +99,12 @@ import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
     BlogAddComponent,
     NewsControlComponent,
     NewsAddComponent,
+    RecuitControlComponent,
+    RecruitAddComponent,
+    CusotmerControlComponent,
+    GalleryControlComponent,
+    GalleryAddComponent,
+    CustomerAddComponent,
   ],
   imports: [
     BrowserModule,
