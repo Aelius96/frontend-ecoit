@@ -55,6 +55,7 @@ import { CusotmerControlComponent } from './modules/customer/cusotmer-control/cu
 import { GalleryControlComponent } from './modules/typical/gallery/gallery-control/gallery-control.component';
 import { GalleryAddComponent } from './modules/typical/gallery/gallery-add/gallery-add.component';
 import { CustomerAddComponent } from './modules/customer/customer-add/customer-add.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -111,8 +112,7 @@ import { CustomerAddComponent } from './modules/customer/customer-add/customer-a
     AppRoutingModule,
     FormsModule,
     CKEditorModule,
-
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
