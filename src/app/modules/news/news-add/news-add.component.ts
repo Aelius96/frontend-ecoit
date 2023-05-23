@@ -28,18 +28,7 @@ export class NewsAddComponent implements OnInit{
   }
 
   ngOnInit() {
-    // this.id=this.route.snapshot.params['id'];
-    // if(this.id){
-    //   this.
-    // }
-    // this.ckeConfig={
-    //   extraPlugins: 'uploadimage, justify, colorbutton, colordialog, iframe, font',
-    //   uploadUrl: 'https://ckeditor.com/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
-    //   height: 330,
-    //   filebrowserUploadUrl:'https://ckeditor.com/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Files',
-    //   filebrowserImageUploadUrl:'https://ckeditor.com/apps/ckfinder/3.4.5/core/connector/php/connector.php?command=QuickUpload&type=Images',
-    //
-    // }
+ 
 
   }
 

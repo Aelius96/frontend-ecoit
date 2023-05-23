@@ -126,9 +126,12 @@
   text-align: center;
   width: 100%;
 }
-.pricing-table__footer .edit{
+.edit{
   justify-items: center;
   text-align: center;
   font-weight: bolder;
   color: #50b848;
+}
+.edit:hover{
+  color: #212c32;
 }
