@@ -11,54 +11,15 @@
     <div style=" color: white;background-color: #ffffff00; margin: 0 auto; text-align: center; padding-bottom: 0px; " class="pricing-table-content-area bg-gray-2 section-space--pb_90">
       <div class="container">
         <div class="container">
-          <div class="">
+          <div class="" *ngFor="let number of numbers">
             <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-12" >
               <div class="vc_column-inner ">
                 <div class="wpb_wrapper">
                   <div class="wdc-counter style-icon icon-top">
-                    <div class="box-icon"><span><i class="fa fa-users"><br></i></span></div>
+                    <div class="box-icon"><span><i class="{{number.icon}}"><br></i></span></div>
                     <div class="box-inner">
-                      <div class="counter-number" data-to="+100000" >+100000</div>
-                      <h4 class="chuyenmucso">Người Dùng</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-12" >
-              <div class="vc_column-inner ">
-                <div class="wpb_wrapper">
-                  <div class="wdc-counter style-icon icon-top">
-                    <div class="box-icon"><span><i class="fa fa-laptop"></i></span></div>
-                    <div class="box-inner">
-                      <div class="counter-number" data-to="+10">+10</div>
-                      <h4 class="chuyenmucso">Năm Kinh Nghiệm</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-12" >
-              <div class="vc_column-inner ">
-                <div class="wpb_wrapper">
-                  <div class="wdc-counter style-icon icon-top">
-                    <div class="box-icon"><span><i class="fa fa-book"></i></span></div>
-                    <div class="box-inner">
-                      <div class="counter-number" data-to="+150">+150</div>
-                      <h4 class="chuyenmucso">Dự Án Đã Hoàn Thành</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-12" >
-              <div class="vc_column-inner ">
-                <div class="wpb_wrapper">
-                  <div class="wdc-counter style-icon icon-top">
-                    <div class="box-icon"><span><i class="fa fa-user"></i></span></div>
-                    <div class="box-inner">
-                      <div class="counter-number" data-to="+50">+50</div>
-                      <h4 class="chuyenmucso">Cán Bộ Nhân Viên</h4>
+                      <div class="counter-number"  >{{number.num}}</div>
+                      <h4 class="chuyenmucso">{{number.tittle}}</h4>
                     </div>
                   </div>
                 </div>

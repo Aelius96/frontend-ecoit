@@ -10,7 +10,7 @@ export class AsideComponent {
   aside =[
     {
       id:1,
-      tittle:'dashboard',
+      tittle:'Dashboard',
       a: '/admin',
       icon:'far fa-home'
     },
@@ -53,7 +53,7 @@ export class AsideComponent {
     {
       id:8,
       tittle: 'Tài khoản',
-      a: '/admin',
+      a: 'user',
       icon:'far fa-user'
     }
 
