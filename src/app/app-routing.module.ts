@@ -19,11 +19,13 @@ import {RecruitListComponent} from "./modules/recruit/recruit-list/recruit-list.
 import {PostListComponent} from "./modules/post/post-list/post-list.component";
 import {BlogListComponent} from "./modules/blog/blog-list/blog-list.component";
 import {CustomerProductComponent} from "./modules/group/customer-product/customer-product.component";
+
 import {LoginComponent} from "./authentication/login/login.component";
 import {RegisterComponent} from "./authentication/register/register.component";
 import {AdminComponent} from "./modules/admin/admin/admin.component";
 import {NumberAddComponent} from "./modules/typical/number/number-add/number-add.component";
 import {AuthenticateService} from "./authentication/authenticate.service";
+
 
 
 const routes: Routes =[
