@@ -1,6 +1,6 @@
 export class Number{
-  id: any;
-  description: any;
-  num: any;
-  icon:any;
+  id: number;
+  description: string;
+  num: number;
+  icon: string;
 }
