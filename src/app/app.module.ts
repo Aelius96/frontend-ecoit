@@ -60,6 +60,9 @@ import { UserAddComponent } from './modules/user/user-add/user-add.component';
 import { UserActiveComponent } from './modules/user/user-active/user-active.component';
 import { HistoryListComponent } from './modules/admin/history/history-list/history-list.component';
 
+import {HttpClientModule} from "@angular/common/http";
+
+
 
 @NgModule({
   declarations: [
@@ -119,8 +122,7 @@ import { HistoryListComponent } from './modules/admin/history/history-list/histo
     AppRoutingModule,
     FormsModule,
     CKEditorModule,
-
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
