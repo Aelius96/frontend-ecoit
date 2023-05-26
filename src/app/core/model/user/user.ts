@@ -1,3 +1,4 @@
+
 export class User {
   id: any;
   username:any;
@@ -8,4 +9,5 @@ export class User {
   active:any;
   roles:any;
   accessToken:any;
+
 }

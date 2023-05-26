@@ -8,13 +8,13 @@ import {Domain} from "../../core/domain/domain";
   providedIn: 'root'
 })
 export class RecruitService{
-  private domain=`${Domain.RECRUIT}`
-  private baseURL = `${Constant.BASE_URL}`;
-  constructor(private httpClient: HttpClient) {
-  }
+  // private domain=`${Domain.RECRUIT}`
+  // private baseURL = `${Constant.BASE_URL}`;
+  // constructor(private httpClient: HttpClient) {
+  // }
 
 
-  getById(id:number): Observable<any>{
-    return this.httpClient.get(`${this.baseURL}/${this.domain}/d/${id}`)
-  }
+  // getById(id:number): Observable<any>{
+  //   return this.httpClient.get(`${this.baseURL}/${this.domain}/d/${id}`)
+  // }
 }
