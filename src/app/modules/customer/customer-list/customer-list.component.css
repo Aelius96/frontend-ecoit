@@ -35,10 +35,18 @@
   position: absolute;
   bottom: 10px;
   text-align: center;
-  width: 85%;
+  width: 90%;
+  
 }
+
 .pricing-table__footer .quantam{
   justify-items: center;
   text-align: center;
   font-weight: bolder;
+}
+
+.quantam:hover{
+  text-decoration:none;
+  
+  color: #50b848;
 }

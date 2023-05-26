@@ -55,6 +55,10 @@ import { CusotmerControlComponent } from './modules/customer/cusotmer-control/cu
 import { GalleryControlComponent } from './modules/typical/gallery/gallery-control/gallery-control.component';
 import { GalleryAddComponent } from './modules/typical/gallery/gallery-add/gallery-add.component';
 import { CustomerAddComponent } from './modules/customer/customer-add/customer-add.component';
+import { UserControlComponent } from './modules/user/user-control/user-control.component';
+import { UserAddComponent } from './modules/user/user-add/user-add.component';
+import { UserActiveComponent } from './modules/user/user-active/user-active.component';
+import { HistoryListComponent } from './modules/admin/history/history-list/history-list.component';
 
 
 @NgModule({
@@ -105,6 +109,10 @@ import { CustomerAddComponent } from './modules/customer/customer-add/customer-a
     GalleryControlComponent,
     GalleryAddComponent,
     CustomerAddComponent,
+    UserControlComponent,
+    UserAddComponent,
+    UserActiveComponent,
+    HistoryListComponent,
   ],
   imports: [
     BrowserModule,

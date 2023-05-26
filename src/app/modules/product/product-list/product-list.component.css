@@ -5,6 +5,7 @@
 }
 .imgicon{
   color: black;
+  text-align: center;
 }
 .chuyenmuc{
   text-align: center ;
@@ -34,11 +35,20 @@
 }
 .imgicon{
   color: black;
+ 
+}
+.post-item{
+  width: 150px;
+  height: auto;
 }
 .ap-xnam{
   color: black;
 }
 
+.wp-post-image{
+  width: 70%;
+  height: 60%;
+}
 
 .pricing-table__title{
   letter-spacing: -.4px;
@@ -65,7 +75,7 @@
 }
 
 .pricing-table__innerrr:hover:before {
-  width: 100%;
+  width: 70%;
   left: 0;
   right: 0;
 }
