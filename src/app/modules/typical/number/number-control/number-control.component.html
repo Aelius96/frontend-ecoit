@@ -34,29 +34,30 @@
       </div>
     </div>
 
-    <div class="number-icon">
-      <div class="row" >
+    <div *ngFor="let num of number" class="number-icon">
+
         <div class="col-md-3"  >
-           <div class="card" style=" border: 1px solid rgb(255,255,255); box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.06)">
-             <div class="action-box">
-               <div >
-<!--                 ví dụ về button sửa-->
-                 <button (click)="updateTypicalNum(1)"  style="background-color: #50b848" class="btnn"  ><i class="far fa-pen"></i> </button>
-               </div>
-               <div >
-                 <button (click)="deleteElement(1)" style="background-color: rgb(255,0,0)" class="btnn" ><i class="far fa-times"></i> </button>
-               </div>
-             </div>
-             <div class="content-box ">
-                 <h4  class="box-icon itemm" >
-                   <i class="far fa-users">
-                   </i>
-                 </h4>
-                 <div class="counter-number itemm">+100000</div>
-                 <h5 class="chuyenmuc itemm">Người Dùng</h5>
-               </div>
+          <div class="card" style=" border: 1px solid rgb(255,255,255); box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.06)">
+            <div class="action-box">
+              <div >
+                <!--                 ví dụ về button sửa-->
+                <button (click)="updateTypicalNum(num.id)"  style="background-color: #50b848" class="btnn"  ><i class="far fa-pen"></i> </button>
+              </div>
+              <div >
+                <button (click)="deleteElement(num.id)" style="background-color: rgb(255,0,0)" class="btnn" ><i class="far fa-times"></i> </button>
+              </div>
             </div>
-        </div>
+
+            <div  class="content-box ">
+              <h4  class="box-icon itemm" >
+                <i class="{{num.icon}}">
+                </i>
+              </h4>
+              <div class="counter-number itemm">+{{num.num}}</div>
+              <h5 class="chuyenmuc itemm">{{num.description}}</h5>
+            </div>
+
+          </div>
       </div>
     </div>
   </div>

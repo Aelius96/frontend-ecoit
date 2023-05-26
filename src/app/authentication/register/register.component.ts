@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import {AuthService} from "../../../services/auth/auth.service";
+import {AuthService} from "../../services/auth/auth.service";
 
 @Component({
-  selector: 'app-sign-up',
-  templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class SignUpComponent {
+export class RegisterComponent {
   isSignUpFailed: any;
   isSuccessful: any;
   errorMessage="";

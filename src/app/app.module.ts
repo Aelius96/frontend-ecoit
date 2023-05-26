@@ -6,7 +6,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import {FormsModule} from "@angular/forms";
 
 import { HomeMainComponent } from './modules/home/home-main/home-main.component';
-
+import { LoginComponent} from "./authentication/login/login.component";
 import { FooterComponent } from './modules/navigation/footer/footer.component';
 import { HeaderComponent } from './modules/navigation/header/header.component';
 import { BankingComponent } from './modules/product/banking/banking.component';
@@ -19,8 +19,8 @@ import { TypicalCustomersComponent } from './modules/introduce/typical-customers
 import { ContactComponent } from './modules/contact/contact.component';
 
 import { ErrorComponent } from './modules/error/error.component';
-import{LoginComponent} from "./modules/authentication/login/login.component";
-import {SignUpComponent} from "./modules/authentication/sign-up/sign-up.component";
+
+
 import {BlogListComponent} from "./modules/blog/blog-list/blog-list.component";
 import {NewsListComponent} from "./modules/news/news-list/news-list.component";
 import {RecruitListComponent} from "./modules/recruit/recruit-list/recruit-list.component";
@@ -61,6 +61,7 @@ import { UserActiveComponent } from './modules/user/user-active/user-active.comp
 import { HistoryListComponent } from './modules/admin/history/history-list/history-list.component';
 
 import {HttpClientModule} from "@angular/common/http";
+import { RegisterComponent } from './authentication/register/register.component';
 
 
 
@@ -94,7 +95,6 @@ import {HttpClientModule} from "@angular/common/http";
     SliderListComponent,
     CustomerProductComponent,
     LoginComponent,
-    SignUpComponent,
     AdminComponent,
     HeaderAdminComponent,
     AsideComponent,
@@ -112,10 +112,12 @@ import {HttpClientModule} from "@angular/common/http";
     GalleryControlComponent,
     GalleryAddComponent,
     CustomerAddComponent,
+    RegisterComponent,
     UserControlComponent,
     UserAddComponent,
     UserActiveComponent,
     HistoryListComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -19,10 +19,11 @@ import {RecruitListComponent} from "./modules/recruit/recruit-list/recruit-list.
 import {PostListComponent} from "./modules/post/post-list/post-list.component";
 import {BlogListComponent} from "./modules/blog/blog-list/blog-list.component";
 import {CustomerProductComponent} from "./modules/group/customer-product/customer-product.component";
-import {LoginComponent} from "./modules/authentication/login/login.component";
-import {SignUpComponent} from "./modules/authentication/sign-up/sign-up.component";
+import {LoginComponent} from "./authentication/login/login.component";
+import {RegisterComponent} from "./authentication/register/register.component";
 import {AdminComponent} from "./modules/admin/admin/admin.component";
 import {NumberAddComponent} from "./modules/typical/number/number-add/number-add.component";
+import {AuthenticateService} from "./authentication/authenticate.service";
 
 
 const routes: Routes =[
@@ -52,13 +53,14 @@ const routes: Routes =[
 
 //
   {path: 'login' , component: LoginComponent},
-  {path: 'signup', component:SignUpComponent},
+  {path: 'register', component:RegisterComponent},
 
 
-  {path: 'typical-number/add' , component: NumberAddComponent},
-  {path: 'typical-number/update/:id' , component:NumberAddComponent},
+  {path: 'number/add' , component: NumberAddComponent},
+  {path: 'number/edit/:id' , component:NumberAddComponent},
   { path:'admin',redirectTo:'/admin/dashboard',pathMatch:'full'},
-  {path:'admin' ,loadChildren:() => import('./modules/_container/admin.module').then(m => m.AdminModule) },
+
+  {path:'admin',loadChildren:() => import('./modules/_container/admin.module').then(m => m.AdminModule) },
 
 ]
 @NgModule({

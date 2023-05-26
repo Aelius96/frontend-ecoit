@@ -1,37 +1,28 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, OnInit} from '@angular/core';
+import {NumberService} from "../../../../services/number-typical/number.service";
+import {HttpErrorResponse} from "@angular/common/http";
+import {Number} from "../number";
 
 @Component({
   selector: 'app-number-home',
   templateUrl: './number-home.component.html',
   styleUrls: ['./number-home.component.css']
 })
-export class NumberHomeComponent {
+export class NumberHomeComponent implements OnInit{
+  nums: Number[] = [];
 
-numbers=[
-  {
-    id:1,
-    icon:'fa fa-users',
-    num: '+100000',
-    tittle: 'Người Dùng'
-  },
-  {
-    id:2,
-    icon:'fa fa-laptop',
-    num: '+10',
-    tittle: 'Năm Kinh Nghiệm'
-  },
-  {
-    id:3,
-    icon:'fa fa-book',
-    num: '+150',
-    tittle: 'Dự Án Đã Hoàn Thành'
-  },
-  {
-    id:4,
-    icon:'fa fa-user',
-    num: '+50',
-    tittle: 'Cán Bộ Nhân Viên'
-  },
-]
+  constructor(private numberService: NumberService) { }
 
+  ngOnInit() {
+    this.getAllUser();
+  }
+
+  public getAllUser(): void {
+    this.numberService.getAllNumber().subscribe(
+      (response:Number[]) => {
+        this.nums = response;
+        console.log(this.nums);
+      }
+    );
+  }
 }

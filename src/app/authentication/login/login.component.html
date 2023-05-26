@@ -11,11 +11,11 @@
             <input type="text"  [(ngModel)] = "form.username" name="username"  placeholder="Tài khoản">
           </div>
           <div class="input" >
-            <input type="text"  [(ngModel)] = "form.password" name="password"  placeholder="Mật khẩu">
+            <input type="password"  [(ngModel)] = "form.password" name="password"  placeholder="Mật khẩu">
           </div>
 
           <div>
-            <input type="hidden" name="role">
+            <input type="hidden" [(ngModel)] ="form.roles" name="role">
           </div>
         </div>
 
