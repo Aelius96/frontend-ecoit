@@ -5,6 +5,7 @@
 }
 .imgicon{
   color: black;
+  text-align: center;
 }
 .chuyenmuc{
   text-align: center ;
@@ -34,7 +35,47 @@
 }
 .imgicon{
   color: black;
+ 
+}
+.post-item{
+  width: 150px;
+  height: auto;
 }
 .ap-xnam{
   color: black;
+}
+
+.wp-post-image{
+  width: 70%;
+  height: 60%;
+}
+
+.pricing-table__title{
+  letter-spacing: -.4px;
+  align-content: center;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.pricing-table__innerrr::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #b4dab9;
+  transition: .05s;
+  z-index: -1;
+}
+
+.pricing-table__innerrr:hover:before {
+  width: 70%;
+  left: 0;
+  right: 0;
 }

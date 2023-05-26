@@ -20,6 +20,13 @@ import {PostListComponent} from "./modules/post/post-list/post-list.component";
 import {BlogListComponent} from "./modules/blog/blog-list/blog-list.component";
 import {CustomerProductComponent} from "./modules/group/customer-product/customer-product.component";
 
+import {LoginComponent} from "./authentication/login/login.component";
+import {RegisterComponent} from "./authentication/register/register.component";
+import {AdminComponent} from "./modules/admin/admin/admin.component";
+import {NumberAddComponent} from "./modules/typical/number/number-add/number-add.component";
+import {AuthenticateService} from "./authentication/authenticate.service";
+
+
 
 const routes: Routes =[
   { path:'',redirectTo:'/trang-chu',pathMatch:'full',}, // full khớp hoàn toàn
@@ -44,8 +51,18 @@ const routes: Routes =[
   {path:'news',component:NewsListComponent},
   {path:'recruit',component: RecruitListComponent},
   {path:'post', component: PostListComponent},
-  {path:'blog', component: BlogListComponent}
+  {path:'blog', component: BlogListComponent},
 
+//
+  {path: 'login' , component: LoginComponent},
+  {path: 'register', component:RegisterComponent},
+
+
+  {path: 'number/add' , component: NumberAddComponent},
+  {path: 'number/edit/:id' , component:NumberAddComponent},
+  { path:'admin',redirectTo:'/admin/dashboard',pathMatch:'full'},
+
+  {path:'admin',loadChildren:() => import('./modules/_container/admin.module').then(m => m.AdminModule) },
 
 ]
 @NgModule({

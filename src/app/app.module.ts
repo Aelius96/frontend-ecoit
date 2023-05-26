@@ -6,7 +6,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import {FormsModule} from "@angular/forms";
 
 import { HomeMainComponent } from './modules/home/home-main/home-main.component';
-
+import { LoginComponent} from "./authentication/login/login.component";
 import { FooterComponent } from './modules/navigation/footer/footer.component';
 import { HeaderComponent } from './modules/navigation/header/header.component';
 import { BankingComponent } from './modules/product/banking/banking.component';
@@ -19,6 +19,7 @@ import { TypicalCustomersComponent } from './modules/introduce/typical-customers
 import { ContactComponent } from './modules/contact/contact.component';
 
 import { ErrorComponent } from './modules/error/error.component';
+
 
 import {BlogListComponent} from "./modules/blog/blog-list/blog-list.component";
 import {NewsListComponent} from "./modules/news/news-list/news-list.component";
@@ -36,7 +37,31 @@ import { RecruitNewsComponent } from './modules/home/group/recruit-news/recruit-
 import { CusTypicalHomeComponent } from './modules/typical/customer/cus-typical-home/cus-typical-home.component';
 import { SliderListComponent } from './modules/sliders/slider-list/slider-list.component';
 import { CustomerProductComponent } from './modules/group/customer-product/customer-product.component';
+import { AdminComponent } from './modules/admin/admin/admin.component';
+import { HeaderAdminComponent } from './modules/admin/header-admin/header-admin.component';
+import { AsideComponent } from './modules/admin/aside/aside.component';
+import { DashboardComponent } from './modules/admin/dashboard/dashboard.component';
+import { NumberControlComponent } from './modules/typical/number/number-control/number-control.component';
+import { PostControlComponent } from './modules/post/post-control/post-control.component';
+import { NumberAddComponent } from './modules/typical/number/number-add/number-add.component';
+import { BlogControlComponent } from './modules/blog/blog-control/blog-control.component';
+import { BlogAddComponent } from './modules/blog/blog-add/blog-add.component';
+import { NewsControlComponent } from './modules/news/news-control/news-control.component';
+import { NewsAddComponent } from './modules/news/news-add/news-add.component';
+import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
+import { RecuitControlComponent } from './modules/recruit/recuit-control/recuit-control.component';
+import { RecruitAddComponent } from './modules/recruit/recruit-add/recruit-add.component';
+import { CusotmerControlComponent } from './modules/customer/cusotmer-control/cusotmer-control.component';
+import { GalleryControlComponent } from './modules/typical/gallery/gallery-control/gallery-control.component';
+import { GalleryAddComponent } from './modules/typical/gallery/gallery-add/gallery-add.component';
+import { CustomerAddComponent } from './modules/customer/customer-add/customer-add.component';
+import { UserControlComponent } from './modules/user/user-control/user-control.component';
+import { UserAddComponent } from './modules/user/user-add/user-add.component';
+import { UserActiveComponent } from './modules/user/user-active/user-active.component';
+import { HistoryListComponent } from './modules/admin/history/history-list/history-list.component';
 
+import {HttpClientModule} from "@angular/common/http";
+import { RegisterComponent } from './authentication/register/register.component';
 
 
 
@@ -69,12 +94,37 @@ import { CustomerProductComponent } from './modules/group/customer-product/custo
     CusTypicalHomeComponent,
     SliderListComponent,
     CustomerProductComponent,
+    LoginComponent,
+    AdminComponent,
+    HeaderAdminComponent,
+    AsideComponent,
+    DashboardComponent,
+    NumberControlComponent,
+    PostControlComponent,
+    NumberAddComponent,
+    BlogControlComponent,
+    BlogAddComponent,
+    NewsControlComponent,
+    NewsAddComponent,
+    RecuitControlComponent,
+    RecruitAddComponent,
+    CusotmerControlComponent,
+    GalleryControlComponent,
+    GalleryAddComponent,
+    CustomerAddComponent,
+    RegisterComponent,
+    UserControlComponent,
+    UserAddComponent,
+    UserActiveComponent,
+    HistoryListComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CKEditorModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
