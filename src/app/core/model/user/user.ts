@@ -8,6 +8,7 @@ export class User {
   lastName:any;
   active:any;
   roles:any;
-  accessToken:any;
+  token: string;
+
 
 }

@@ -7,10 +7,18 @@ import {User} from "../../core/model/user/user";
   providedIn: 'root'
 })
 export class UserService {
-  private baseURL =`http://localhost:8080/api/users`
-  constructor(private http:HttpClient) { }
+  private baseUrl =`http://localhost:8080/api/v1/user`
+  constructor(private httpclient:HttpClient) { }
 
   public findAll():Observable<User[]>{
-    return this.http.get<User[]>(this.baseURL);
+    return this.httpclient.get<User[]>(`${this.baseUrl}/all`);
   }
+
+  public getUserById(id:number):Observable<User>{
+    return this.httpclient.get<User>(`${this.baseUrl}/${id}`);
+  }
+  public deleteUser(id: number): Observable<void> {
+    return this.httpclient.get<void>(`${this.baseUrl}/delete/${id}`);
+  }
+
 }

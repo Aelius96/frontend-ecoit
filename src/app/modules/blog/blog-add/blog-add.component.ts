@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {Blog} from "../../../core/model/blog/blog";
 import {Router} from "@angular/router";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import * as ClassicEditorBuild from '@ckeditor/ckeditor5-build-classic';
 
 @Component({
   selector: 'app-blog-add',
@@ -36,6 +36,6 @@ imageChange(e: any){
   protected readonly Blog = Blog;
 
 
-  public Editor = ClassicEditor;
+  public Editor = ClassicEditorBuild;
 
 }

@@ -5,7 +5,7 @@ export class Domain {
   public static GALLERY = `tImage`;
   public static NAVIGATION = `nav`;
   public static NUMBER = `number`;
-  public static POST = `news`;
+  public static NEWS = `news`;
   public static PRODUCT = `product`;
   public static RECRUIT = `recruit`;
   public static SLIDERS = `sliders`;

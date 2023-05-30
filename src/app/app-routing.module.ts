@@ -62,7 +62,8 @@ const routes: Routes =[
   {path: 'number/edit/:id' , component:NumberAddComponent},
   { path:'admin',redirectTo:'/admin/dashboard',pathMatch:'full'},
 
-  {path:'admin',loadChildren:() => import('./modules/_container/admin.module').then(m => m.AdminModule) },
+  {path:'admin', canActivate:[AuthenticateService]
+    ,loadChildren:() => import('./modules/_container/admin.module').then(m => m.AdminModule) },
 
 ]
 @NgModule({

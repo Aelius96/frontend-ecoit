@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {TokenStorageService} from "../../../services/token-storage/token-storage.service";
 
 @Component({
   selector: 'app-header-admin',
@@ -15,7 +16,7 @@ export class HeaderAdminComponent implements OnInit{
   month: any;
   year: any ;
 
-
+  constructor(private tokenStorageService: TokenStorageService) { }
 
 
   week() {
@@ -30,5 +31,9 @@ export class HeaderAdminComponent implements OnInit{
   }
 
 
+  logout() {
+    this.tokenStorageService.signOut();
+    window.location.reload();
+  }
 }
 
