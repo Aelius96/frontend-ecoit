@@ -1,14 +1,14 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {RouterModule, Routes} from "@angular/router";
-import {CusotmerControlComponent} from "../customer/cusotmer-control/cusotmer-control.component";
+import {CustomerControlComponent} from "../customer/customer-control/customer-control.component";
 import {CustomerAddComponent} from "../customer/customer-add/customer-add.component";
 
 
 
 const routes: Routes = [
-  {path:'' , component: CusotmerControlComponent},
-  {path: 'new', component: CustomerAddComponent},
+  {path:'' , component: CustomerControlComponent},
+  {path: 'add', component: CustomerAddComponent},
   {path:'update/:id' , component: CustomerAddComponent},
 
 ]

@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
 import {TokenStorageService} from "../services/token-storage/token-storage.service";
-import {ActivatedRouteSnapshot, Router, RouterStateSnapshot} from "@angular/router";
-import {User} from "../core/model/user/user";
+import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot} from "@angular/router";
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthenticateService {
-   username: string;
-   roles: string[] = [];
+export class AuthenticateService implements CanActivate{
+  username: string;
+  roles :string[]=[];
   constructor(private tokenStorageService: TokenStorageService,
               private router: Router) {
   }
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): any {
-    const isLogIn = this.tokenStorageService.getToken();
+    const isLogIn = !!this.tokenStorageService.getToken();
 
-    if(isLogIn != null){
+    if(isLogIn){
       const user = this.tokenStorageService.getUser();
       this.username = user.username;
       this.roles = user.roles;
@@ -27,6 +27,7 @@ export class AuthenticateService {
 
     }else {
       this.router.navigate(['/login']);
+
     }
   }
 }

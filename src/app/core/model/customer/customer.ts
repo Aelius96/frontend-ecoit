@@ -1,3 +1,5 @@
+import {Product} from "../product/product";
+
 export class Customer{
     id: any;
     name: any;
@@ -6,7 +8,7 @@ export class Customer{
     bgIColor: any
     icon: any;
     url: any;
-// product
+  products?:Product[];
 
 
 }

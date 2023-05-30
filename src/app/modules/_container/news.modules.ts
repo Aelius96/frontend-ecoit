@@ -8,8 +8,8 @@ import {NewsAddComponent} from "../news/news-add/news-add.component";
 
 const routes: Routes = [
   {path:'' , component: NewsControlComponent},
-  {path: 'new', component: NewsAddComponent},
-  {path:'update/:id' , component: NewsAddComponent},
+  {path: 'add', component: NewsAddComponent},
+  {path: 'edit/:id' , component: NewsAddComponent},
 
 ]
 

@@ -1,9 +1,9 @@
 export class News {
-  id: any
-  postImage: any;
-  title: any;
-  content: any;
+  id: number
+  newsImage: any;
+  title: string;
+  content: string;
   date: any;
-  description: any;
-  url: any;
+  description: string;
+  url: string;
 }

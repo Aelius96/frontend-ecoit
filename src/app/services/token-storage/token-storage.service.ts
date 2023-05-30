@@ -23,6 +23,8 @@ export class TokenStorageService {
     // localStorage.setItem(TOKEN_KEY, token);
   }
 
+
+
   public getToken(): any{
     const itemStr = localStorage.getItem(TOKEN_KEY)
     if (!itemStr) {
