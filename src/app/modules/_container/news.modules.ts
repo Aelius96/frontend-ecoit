@@ -1,6 +1,4 @@
 import {RouterModule, Routes} from "@angular/router";
-import {BlogControlComponent} from "../blog/blog-control/blog-control.component";
-import {BlogAddComponent} from "../blog/blog-add/blog-add.component";
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {NewsControlComponent} from "../news/news-control/news-control.component";

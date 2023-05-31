@@ -1,0 +1,46 @@
+<form >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="update_box">
+            <span><strong>Ảnh bìa</strong></span>
+            <div class="image">
+              <img  src="{{url}}" alt="" appHideMissing>
+            </div>
+            <input type="file" value="select" (change)="imageChange($event)">
+          </div>
+          <div class="update_box">
+            <span><strong>Tên</strong></span>
+            <input type="text" ng-Model="new.description" name="description">
+          </div>
+          <div class="update_box">
+            <span><strong>Mô tả</strong></span>
+            <textarea style="height: 120px" ></textarea>
+          </div>
+          <div class="submit-button">
+            <button type="submit" class="btn btn-primary btn-lg btnn">Lưu</button>
+            <button type="button" class="btn btn-secondary btn-lg btnn cancel"  >Hủy</button>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="update_box">
+            <span><strong>Nội dung</strong></span>
+            <div class="ckeditorContaniner" id="editor">
+  <!--            <ckeditor [editor]="Editor"  [data]="new.content"></ckeditor>-->
+              <ckeditor ngModel="new.content" [config]="ckeConfig" ></ckeditor>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+  
+  <!--<script>-->
+  <!--  InlineEditor-->
+  <!--    .create( document.querySelector( '#editor' ) )-->
+  <!--    .catch( error => {-->
+  <!--      console.error( error );-->
+  <!--    } );-->
+  <!--</script>-->
+  

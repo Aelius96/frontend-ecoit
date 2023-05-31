@@ -59,6 +59,14 @@ import { UserControlComponent } from './modules/user/user-control/user-control.c
 import { UserAddComponent } from './modules/user/user-add/user-add.component';
 import { UserActiveComponent } from './modules/user/user-active/user-active.component';
 import { HistoryListComponent } from './modules/admin/history/history-list/history-list.component';
+import { ProductControlComponent } from './modules/product/product-control/product-control.component';
+import { ProductAddComponent } from './modules/product/product-add/product-add.component';
+import { NaviControlComponent } from './modules/navigation/navigator-admin/navi-control/navi-control.component';
+import { NaviAddComponent } from './modules/navigation/navigator-admin/navi-add/navi-add.component';
+import { BannerControlComponent } from './modules/banner/banner-control/banner-control.component';
+import { BannerAddComponent } from './modules/banner/banner-add/banner-add.component';
+import { SliderControlComponent } from './modules/sliders/slider-control/slider-control.component';
+import { SliderAddComponent } from './modules/sliders/slider-add/slider-add.component';
 
 import {HttpClientModule} from "@angular/common/http";
 
@@ -116,13 +124,29 @@ import {HttpClientModule} from "@angular/common/http";
     UserAddComponent,
     UserActiveComponent,
     HistoryListComponent,
+    ProductControlComponent,
+    ProductAddComponent,
+    NaviControlComponent,
+    NaviAddComponent,
+    BannerControlComponent,
+    BannerAddComponent,
+    SliderControlComponent,
+    SliderAddComponent,
+
+
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     CKEditorModule,
+<<<<<<< HEAD
     HttpClientModule
+=======
+    
+
+>>>>>>> 936f1f3 (update-banner-slide)
   ],
   providers: [],
   bootstrap: [AppComponent]
