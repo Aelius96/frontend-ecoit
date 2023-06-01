@@ -35,19 +35,19 @@ export class AsideComponent {
     {
       id:5,
       tittle:'sản phầm',
-      a: '/admin',
+      a: 'product',
       icon:'far fa-box'
     },
     {
       id:6,
       tittle:'Trình chiếu',
-      a: '/admin',
+      a: 'slide',
       icon:'far fa-columns'
     },
     {
       id:7,
       tittle:'Điều hướng',
-      a: '/admin',
+      a: 'navigator',
       icon:'far fa-bars'
     },
     {

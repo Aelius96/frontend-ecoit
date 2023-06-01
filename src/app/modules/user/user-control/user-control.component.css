@@ -43,15 +43,15 @@
   color: blue;
 
 }
-
 /*  */
 .icon{
+
  position: static;
-  
   margin-left: 10px;
   padding: 5px 10px 5px 10px;
   font-size: 15px;
   border-radius: 10px;
+  
 }
 .icon-edit{
   background-color: #e0da25;
