@@ -47,6 +47,9 @@
 
 .quantam:hover{
   text-decoration:none;
-  
-  color: #50b848;
+  color: #000000;
+}
+
+.quantam{
+ color:  #50b848;
 }

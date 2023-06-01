@@ -23,13 +23,13 @@
           </div>
         </div>
         <div class="col-lg-8">
-          <div class="update_box ">
+
+          <div class="update_box">
             <span><strong>Nội dung</strong></span>
-            
-                <div class="ckeditorContaniner" id="editor" style="height: 100%;">
-                    <ckeditor   [config]="ckeConfig" ></ckeditor>
-                  </div>
-                  
+            <div class="ckeditorContaniner" id="editor">
+  <!--            <ckeditor [editor]="Editor"  [data]="new.content"></ckeditor>-->
+              <ckeditor ngModel="new.content" [config]="ckeConfig" ></ckeditor>
+            </div>
           </div>
         </div>
       </div>

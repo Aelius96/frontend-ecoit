@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ProductAddComponent {
 
-
-  
   fileToUpload:string [] = [];
   url: any;
   id: any;

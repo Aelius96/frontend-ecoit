@@ -10,6 +10,7 @@ const routes: Routes = [
     {path:'' , component: NavigatorControlComponent},
     {path: 'new', component: NavigatorAddComponent},
     {path:'update/:id' , component: NavigatorAddComponent},
+
   
   ]
   

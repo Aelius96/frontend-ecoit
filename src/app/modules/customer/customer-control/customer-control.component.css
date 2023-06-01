@@ -85,7 +85,7 @@
   border-radius: 50%;
 }
 .customer-control{
-  padding-bottom: 120px;
+  padding-bottom: 10px;
   padding-top: 120px;
   height: 100vh;
 }
@@ -138,4 +138,9 @@
 }
 .edit:hover{
   color: #212c32;
+}
+
+
+a:hover{
+  text-decoration: none;
 }

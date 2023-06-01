@@ -148,6 +148,7 @@ import { BannerControlComponent } from './modules/banner/banner-control/banner-c
         NgOptimizedImage
     ],
   providers: [authInterceptorProviders],
+
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
+
 @Component({
   selector: 'app-product-control',
   templateUrl: './product-control.component.html',
@@ -7,18 +9,14 @@ import { Router } from '@angular/router';
 })
 export class ProductControlComponent {
 
-
-
+  constructor(private router:Router,) {
+  }
   
-  constructor(private router:Router,
-    ) {
-}
-
-updateNews(id: number){
-return this.router.navigate(['new/update', id]);
-
-}
-
+    updateNews(id: number){
+      return this.router.navigate(['new/update', id]);
+  
+    }
+  
 
 
 }

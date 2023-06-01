@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
 export class GalleryAddComponent {
 
 
-
-
   fileToUpload:string [] = [];
   url: any;
   id: any;

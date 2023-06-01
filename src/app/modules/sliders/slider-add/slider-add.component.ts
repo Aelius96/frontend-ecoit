@@ -9,8 +9,6 @@ export class SliderAddComponent {
 
 
 
-  
-
 
   fileToUpload:string [] = [];
   url: any;

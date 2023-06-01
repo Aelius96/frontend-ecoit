@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HistoryListComponent {
 
-
-
   searchField = {
     pageIndex: 1,
     pageSize: 10,
@@ -28,7 +26,4 @@ export class HistoryListComponent {
     this.searchField.pageIndex = 1;
     this.getBySearch();
   }
-
-
-
 }
