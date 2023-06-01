@@ -18,6 +18,10 @@
 }
 .control{
   margin-top:7px;
+  color: black;
+}
+.control:hover{
+  text-decoration: none;
 }
 .menu-item{
   padding-left: 20px;

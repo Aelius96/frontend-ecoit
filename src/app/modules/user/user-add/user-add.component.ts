@@ -10,6 +10,14 @@ import { Component } from '@angular/core';
 export class UserAddComponent {
 
   
+  id: any
+
+  isSuccessful = false;
+  isSignUpFailed = false;
+  errorMessage = "";
+
+
+
  
 
 }

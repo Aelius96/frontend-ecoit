@@ -2,7 +2,7 @@
   <div class="d-flex  justify-content-between header-menu ">
     <div class="left-d-flex">
       <div class="d-flex">
-        <a style="width: 80px" routerLink="../news"  routerLinkActive="active"><span  class="spann tt">Tin tức</span></a> <span style=" font-weight: bolder;font-size: 25px;height: 40px">|</span>
+        <a style="width: 80px ; margin-top: 5px;" routerLink="../news"  routerLinkActive="active"><span  class="spann tt">Tin tức</span></a> <span style=" font-weight: bolder;font-size: 25px;height: 40px">|</span>
         <a style="width: 120px" routerLink="../recuit" routerLinkActive="active"  ><span  class="spann td">Tuyển dụng</span></a>
         <input type="text " class="form-control "  placeholder="Viết gì đó ...">
         <div class="input-group-append inputt" >
@@ -65,7 +65,7 @@
                 </div>
               </div>
               <h5 class="tittle-blog">
-                <a class="btn-link">Tiêu đề tin tức
+                <a class="btn-link">{{news.title}}
                   <span>
                     <i class="fas fa-plus-circle"></i>
                     <i class="fas fa-minus-circle"></i>
