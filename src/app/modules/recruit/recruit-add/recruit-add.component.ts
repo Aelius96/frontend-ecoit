@@ -27,12 +27,7 @@ ngOnInit() {
 
 }
 
-  // getRecruitById(id: any) {
-  //   this.recruitService.getById(id).subscribe(data => {
-  //     this.recruit = data;
-  //     this.url = this.recruit.thumb.pathUrl;
-  //   });
-  // }
+  
   imageChange(e: any){
     const files = e.target.files;
     if (files.length === 0) return;

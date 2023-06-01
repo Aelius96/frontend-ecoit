@@ -20,14 +20,6 @@ export class UserControlComponent implements OnInit{
   modalRef?: NgbModalRef;
   constructor(private userService: UserService, private modalService: NgbModal ) { }
 
-  addNew(){
-    this.modalRef = this.modalService.open(UserAddComponent, {
-      centered: true,
-      backdrop: false,
-      animation:true,
-
-    });
-  }
 
   ngOnInit(): void {
     this.userService.findAll().subscribe(data=>{

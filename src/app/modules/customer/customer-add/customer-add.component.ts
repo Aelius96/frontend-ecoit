@@ -13,7 +13,9 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class CustomerAddComponent {
 
+    ckeConfig: any;
 
+  url: any;
   id: any;
   customer: Customer = new Customer();
   products: Product[] = [];
@@ -145,5 +147,25 @@ export class CustomerAddComponent {
     window.sessionStorage.setItem("redirect", "/admin/customer/add-new-customer");
     this.router.navigate(['/admin/product/new']);
   }
+
+
+
+
+
+
+
+
+  imageChange(e: any){
+    const files = e.target.files;
+    if (files.length === 0) return;
+
+    const reader = new FileReader();
+    this.fileToUpload=files;
+    reader.readAsDataURL(files[0]);
+    reader.onload = (_event) =>{
+      this.url= reader.result;
+    }
+  }
+
 
 }

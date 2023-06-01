@@ -31,8 +31,10 @@
         </div>
         <div class="update_box">
           <span><strong>Nội dung</strong></span>
-<!--          <ckeditor name="content" [(ngModel)]="recruit.content" [ngModelOptions]="{standalone: true}" [config]="ckeConfig" [data]="recruit.content"></ckeditor>-->
-        </div>
+          <div class="ckeditorContaniner" id="editor">
+            <ckeditor [(ngModel)]="recruit.content" [ngModelOptions]="{standalone: true}" [config]="ckeConfig" ></ckeditor>
+          </div>
+       </div>
       </div>
     </div>
   </div>

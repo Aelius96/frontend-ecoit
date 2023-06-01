@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class HistoryListComponent {
 
+  searchField = {
+    pageIndex: 1,
+    pageSize: 10,
+    sortField: '',
+    sortDir: '',
+    totalElements: 0,
+    method: '',
+    executor: '',
+    action: '',
+    page: ''
+  }
+
+  getBySearch(){}
+
+
+  search(){
+    this.searchField.pageIndex = 1;
+    this.getBySearch();
+  }
 }

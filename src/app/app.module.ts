@@ -65,6 +65,14 @@ import {HttpClientModule} from "@angular/common/http";
 import {RegisterComponent} from './authentication/register/register.component';
 import {authInterceptorProviders} from "./authentication/helper/auth.interceptor";
 import {CommonModule, NgOptimizedImage} from "@angular/common";
+import { NavigatorControlComponent } from './modules/navigation/navigator-admin/navigator-control/navigator-control.component';
+import { NavigatorAddComponent } from './modules/navigation/navigator-admin/navigator-add/navigator-add.component';
+import { ProductControlComponent } from './modules/product/product-control/product-control.component';
+import { ProductAddComponent } from './modules/product/product-add/product-add.component';
+import { SliderAddComponent } from './modules/sliders/slider-add/slider-add.component';
+import { SliderControlComponent } from './modules/sliders/slider-control/slider-control.component';
+import { BannerAddComponent } from './modules/banner/banner-add/banner-add.component';
+import { BannerControlComponent } from './modules/banner/banner-control/banner-control.component';
 
 
 @NgModule({
@@ -119,6 +127,14 @@ import {CommonModule, NgOptimizedImage} from "@angular/common";
     UserAddComponent,
     UserActiveComponent,
     HistoryListComponent,
+    NavigatorControlComponent,
+    NavigatorAddComponent,
+    ProductControlComponent,
+    ProductAddComponent,
+    SliderAddComponent,
+    SliderControlComponent,
+    BannerAddComponent,
+    BannerControlComponent,
 
   ],
     imports: [
@@ -132,6 +148,7 @@ import {CommonModule, NgOptimizedImage} from "@angular/common";
         NgOptimizedImage
     ],
   providers: [authInterceptorProviders],
+
   bootstrap: [AppComponent]
 })
 export class AppModule {
