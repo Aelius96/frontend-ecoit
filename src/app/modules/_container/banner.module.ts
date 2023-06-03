@@ -8,7 +8,7 @@ import { CommonModule } from "@angular/common";
 
 const routes: Routes = [
     {path:'' , component: BannerControlComponent},
-    {path: 'add', component: BannerAddComponent},
+    {path: 'new', component: BannerAddComponent},
 
     {path:'update/:id' , component: BannerAddComponent},
   

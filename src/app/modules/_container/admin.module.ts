@@ -5,6 +5,7 @@ import {DashboardComponent} from "../admin/dashboard/dashboard.component";
 import {AdminComponent} from "../admin/admin/admin.component";
 import { UserControlComponent } from "../user/user-control/user-control.component";
 import { HistoryListComponent } from "../admin/history/history-list/history-list.component";
+import { CusTypicalAddComponent } from "../typical/customer/cus-typical-add/cus-typical-add.component";
 
 
 const routes: Routes =[
@@ -21,12 +22,13 @@ const routes: Routes =[
     {path: 'image-gallery', title:'Admin-khách hàng tiêu biểu', loadChildren:()=>import('./gallery.module').then(m=>m.GalleryModule) },
     {path: 'user', title:'Admin-tài khoản', loadChildren:()=>import('./user.module').then(m=>m.UserModule )  },
     {path:'history' , title: 'Admin-lịch sử sử đổi' , component: HistoryListComponent},
-
     {path: 'product' , title: 'Admin-sản phẩm' , loadChildren:()=>import('./product.module').then(m=>m.ProductModule) },
     {path: 'navigator' , title: 'Admin-điều hướng' , loadChildren:()=>import('./navigator.module').then(m=>m.NavigatorModule) },
     {path:'slide', title:'Admin-trình chiếu' , loadChildren:()=>import('./sliders.module').then(m=>m.SlidersModule)},
     {path:'banner' , title: 'Admin-trình chiếu' , loadChildren:()=>import('./banner.module').then(m=>m.BannerModule)},
-    
+    {path:'customer-typical', title:'Admin-khách hàng', loadChildren:()=>import('./cus-typical.module').then(m=>m.CusTypicalModule)},
+    {path:'about' , title:'Admin-về chúng tôi', loadChildren:()=>import('./about.module').then(m=>m.AboutModule)},
+    {path:'albums' , title:'Amin-kho ảnh' ,  loadChildren:()=>import('./albums.module').then(m=>m.AlbumsModule)}
   ]},
 ]
 
