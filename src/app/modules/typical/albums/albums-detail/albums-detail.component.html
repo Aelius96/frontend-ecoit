@@ -1,9 +1,9 @@
 <div class="toolbar">
-    <div class="d-flex  justify-content-between header-menu ">   
+    <div class="d-flex  justify-content-between header-menu ">
       <div class="left-d-flex">
         <div class="d-flex">
-          <a class="control" style="width: 80px" routerLink="../albums"  routerLinkActive="active"><span class="spann">Kho Ảnh /</span></a>
-          <a class="control"  style="width: 130px ;padding-right: 10px;" routerLink="../image-gallery" routerLinkActive="active"  ><span class="spann" style="font-weight: bold;">Ảnh Hoạt Động</span></a>
+            <a class="control" style="width: 80px" href="./admin/albums"  routerLinkActive="active"><span style="font-weight: bold;" class="spann">Kho Ảnh /</span></a>
+          <a class="control"  style="width: 120px ;padding-right: 10px;" href="./admin/image-gallery" routerLinkActive="active"  ><span class="spann">Ảnh Hoạt Động</span></a>
         </div>
       </div>
       <div class="right-d-flex">
@@ -15,20 +15,14 @@
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
+                <option>4</option>
               </select>
             </div>
           </div>
-          <div class="menu-item">
-            <!--          (click)="addTypicalNum()"-->
-            <a class="ht-btn-custom" routerLink="new"  title="Thêm tin mới"><i class="fas fa-file-plus fa-lg"></i></a>
-          </div>
-  
         </div>
       </div>
-  
     </div>
   </div>
-
   <div class="d-flex flex-column flex-column-fluid">
     <div class="site-wrapper-reveal">
       <div class="section-space--pt_50">
@@ -36,27 +30,29 @@
             <div class="row" style="margin-left: 0px; margin-right: 0px;">
               <div class="col-lg-12">
               <div class="col-lg-8">
+                <div class="product-thumbnail__container">
                       <div class="col-md-3">
-                      <div class="image-gallery" >
+                      <div class="product-thumb-image" >
                         <img class="img-fluid" src="assets/images/imgex.png"  >
                       </div>
                     </div>
                     <div class="col-md-3">
-                      <div class="image-gallery" >
+                      <div class="product-thumb-image" >
                         <img class="img-fluid" src="assets/images/imgex.png"  >
                       </div>
                     </div>
                     <div class="col-md-3">
-                      <div class="image-gallery" >
+                      <div class="product-thumb-image" >
                         <img class="img-fluid" src="assets/images/imgex.png"  >
                       </div>
                     </div>
                     <div class="col-md-3">
-                      <div class="image-gallery" >
+                      <div class="product-thumb-image" >
                         <img class="img-fluid" src="assets/images/imgex.png"  >
                       </div>
                     </div>
                       
+                </div>
               </div>
               <div class="col-lg-4 info-box">
                 <div class="faq-wrapper">
@@ -71,14 +67,10 @@
                       </div>
   
                       <div class="select-content-item">
-                        <span><strong>Đầu đề: </strong></span>
+                        <span><strong>Sử dụng: </strong></span>
                         <span></span>
                       </div>
-                      <div class="select-content-item">
-                        <span><strong>Mô tả: </strong></span>
-                        <span></span>
-                      </div>
-                     
+  
                       <div class="select-content-item">
                         <span><strong>Trạng thái: </strong></span>
                         <!-- <div>
@@ -88,10 +80,15 @@
                           <span class="ml-1">Hoạt động</span>
                         </div> -->
                       </div>
+  
+                      <div class="select-content-item">
+                        
+                          <button class="btn"  style="margin-right: 10px;">Tải xuống</button>
+                           <button class="btn">Xóa</button> 
+
+                        </div>
                         <div class="select-content-item">
-                        <button class="btn mt-2 buton" >Ẩn</button>
-                        <button class="btn mt-2 buton " >Sửa</button>
-                        <button class="btn mt-2 buton " >Xóa</button>
+                        <button class="btn mt-2 w-100" >Thêm vào ảnh nổi bật</button>
                       </div>
                     </div>
                   </div>

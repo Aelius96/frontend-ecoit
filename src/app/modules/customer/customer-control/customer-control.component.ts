@@ -26,7 +26,7 @@ export class CustomerControlComponent implements OnInit{
   }
 
   addCustomer(){
-    this.router.navigate([`/admin/customer/add`])
+    this.router.navigate([`/admin/customer/new`])
   }
 
   updateCustomer(id:number){

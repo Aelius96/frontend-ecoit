@@ -73,6 +73,12 @@ import { SliderAddComponent } from './modules/sliders/slider-add/slider-add.comp
 import { SliderControlComponent } from './modules/sliders/slider-control/slider-control.component';
 import { BannerAddComponent } from './modules/banner/banner-add/banner-add.component';
 import { BannerControlComponent } from './modules/banner/banner-control/banner-control.component';
+import { AboutControlComponent } from './modules/about/about-control/about-control.component';
+import { AlbumControlComponent } from './modules/typical/albums/album-control/album-control.component';
+import { AboutAdressComponent } from './modules/about/about-adress/about-adress.component';
+import { AlbumsDetailComponent } from './modules/typical/albums/albums-detail/albums-detail.component';
+import { CusTypicalControlComponent } from './modules/typical/customer/cus-typical-control/cus-typical-control.component';
+import { CusTypicalAddComponent } from './modules/typical/customer/cus-typical-add/cus-typical-add.component';
 
 
 @NgModule({
@@ -135,6 +141,12 @@ import { BannerControlComponent } from './modules/banner/banner-control/banner-c
     SliderControlComponent,
     BannerAddComponent,
     BannerControlComponent,
+    AboutControlComponent,
+    AlbumControlComponent,
+    AboutAdressComponent,
+    AlbumsDetailComponent,
+    CusTypicalControlComponent,
+    CusTypicalAddComponent,
 
   ],
     imports: [

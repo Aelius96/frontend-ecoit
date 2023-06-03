@@ -8,9 +8,8 @@ import {CustomerAddComponent} from "../customer/customer-add/customer-add.compon
 
 const routes: Routes = [
   {path:'' , component: CustomerControlComponent},
-  {path: 'add', component: CustomerAddComponent},
+  {path: 'new', component: CustomerAddComponent},
   {path:'update/:id' , component: CustomerAddComponent},
-
 ]
 
 @NgModule({
