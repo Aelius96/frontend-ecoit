@@ -28,34 +28,34 @@
           </div>
           <div class="menu-item">
             <!--          (click)="addTypicalNum()"-->
-            <a class="ht-btn-custom" routerLink="new"  title="Thêm tin mới"><i class="fas fa-file-plus fa-lg"></i></a>
+            <a class="ht-btn-custom" routerLink="add"  title="Thêm tin mới"><i class="fas fa-file-plus fa-lg"></i></a>
           </div>
         </div>
       </div>
     </div>
   </div>
   
-<div class="flexiable-slider-wrapper section-space--mt_60" style="margin-top: 50px; padding-bottom: 30px; ">
+<div class="section-space--mt_60" style="margin-top: 50px; padding-bottom: 30px; ">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 wow move-up">
+            <div class="col-lg-12 " *ngFor="let tycus of typicalcusList">
               <div class="flexible-image-slider-wrap">
                 <div class="swiper-container auto--per-flexible__container__aegency image">
                   <div class="swiper-wrapper ">
                     
                     <div class="item-image">
-                      <img class="img-fluid" src="https://ecoit.asia/wp-content/uploads/2019/08/quanlithitrg.jpg" alt="" />
-                        <div class="overlay">Quản lí thị trường</div>
+                      <img class="img-fluid" src="{{tycus.image.pathUrl}}" alt="" />
+                        <div class="overlay">{{tycus.name}}</div>
                     </div>
                   
-                    <div class="item-image">
+                    <!-- <div class="item-image">
                       <img class="img-fluid" src="https://ecoit.asia/wp-content/uploads/2019/08/vpbank.jpg" alt="">
                       <div class="overlay">VpBank</div>
                     </div>
                     <div class="item-image">
                       <img class="img-fluid" src="https://ecoit.asia/wp-content/uploads/2019/08/tainguyenmoitrg.jpg" alt="">
                       <div class="overlay"><span>Tài nguyên môi trường</span></div>
-                    </div>
+                    </div> -->
                     
                   </div>
       

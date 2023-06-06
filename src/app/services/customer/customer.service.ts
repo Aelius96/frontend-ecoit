@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {Constant} from "../../core/config/constant";
 import {Observable} from "rxjs";
 import {Customer} from "../../core/model/customer/customer";
+import { TypicalCustomer } from 'src/app/modules/typical/customer/typical-customer';
 
 @Injectable({
   providedIn: 'root'
@@ -30,4 +31,5 @@ export class CustomerService {
     return this.http.get<Customer>(`${this.baseUrl}/customer/${id}`);
   }
 
+ 
 }

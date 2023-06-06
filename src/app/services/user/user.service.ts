@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {User} from "../../core/model/user/user";
+import { Constant } from 'src/app/core/config/constant';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  private baseUrl =`http://localhost:8080/api/v1/user`
+  private baseUrl =`${Constant.BASE_URL}/user`
   constructor(private httpclient:HttpClient) { }
 
   public findAll():Observable<User[]>{

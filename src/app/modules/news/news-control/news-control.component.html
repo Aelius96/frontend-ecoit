@@ -3,7 +3,7 @@
     <div class="left-d-flex">
       <div class="d-flex">
         <a style="width: 80px ; margin-top: 5px;" routerLink="../news"  routerLinkActive="active"><span  class="spann tt">Tin tức</span></a> <span style=" font-weight: bolder;font-size: 25px;height: 40px">|</span>
-        <a style="width: 120px" routerLink="../recuit" routerLinkActive="active"  ><span  class="spann td">Tuyển dụng</span></a>
+        <a style="width: 120px" routerLink="../recruit" routerLinkActive="active"  ><span  class="spann td">Tuyển dụng</span></a>
         <input type="text " class="form-control "  placeholder="Viết gì đó ...">
         <div class="input-group-append inputt" >
           <button type="submit" class="input-group-text"><i class="fa fa-search"></i></button>
@@ -65,19 +65,22 @@
                 </div>
               </div>
               <h5 class="tittle-blog">
-                <a class="btn-link">{{news.title}}
+                <a class="btn-link">{{news.title}} 
                   <span>
-                    <i class="fas fa-plus-circle"></i>
-                    <i class="fas fa-minus-circle"></i>
+                    <i class="fas fa-plus-circle" data-toggle="collapse" data-target="#demo"  ></i>
+                    
                   </span>
                 </a>
               </h5>
+              
+                <div id="demo" class="collapse" [innerHTML]="news.content">
+                  <!-- {{news.content}} -->
+                </div>
+              
             </div>
           </div>
         </div>
-        <div class="col-lg-12">
-
-        </div>
+        
       </div>
     </div>
   </div>

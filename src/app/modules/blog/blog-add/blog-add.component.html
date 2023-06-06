@@ -11,7 +11,8 @@
         </div>
         <div class="update_box">
           <span><strong>Mô tả</strong></span>
-          <input type="text" ng-Model="blog.description" name="description">
+          <input type="text" [(ngModel)]="blogs.description" name="description">
+
         </div>
         <div class="submit-button">
           <button type="submit" class="btn btn-primary btn-lg btnn">Lưu</button>
@@ -21,12 +22,12 @@
       <div class="col-lg-8">
         <div class="update_box">
           <span><strong>Tiêu đề</strong></span>
-          <input type="text" name="title" ng-Model="blog.title" required>
+          <input type="text" name="title" [(ngModel)]="blogs.title" required>
         </div>
         <div class="update_box">
           <span><strong>Nội dung</strong></span>
           <div class="ckeditorContaniner" id="editor">
-            <ckeditor [(ngModel)]="blog.content" [ngModelOptions]="{standalone: true}" [config]="ckeConfig" ></ckeditor>
+            <ckeditor [(ngModel)]="blogs.content" [ngModelOptions]="{standalone: true}" [config]="ckeConfig" ></ckeditor>
           </div>
         </div>
       </div>

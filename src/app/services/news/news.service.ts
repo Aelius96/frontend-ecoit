@@ -3,14 +3,14 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {News} from "../../core/model/news/news";
 import {Obj} from "@popperjs/core";
+import { Constant } from 'src/app/core/config/constant';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NewsService {
 
-private baseUrl = 'http://localhost:8080/api/v1';
-
+private baseUrl = `${Constant.BASE_URL}`;
   constructor(private http: HttpClient) {
   }
 

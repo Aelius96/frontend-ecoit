@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CustomerService} from "../../../services/customer/customer.service";
 import {Customer} from "../../../core/model/customer/customer";
 import {Router} from "@angular/router";
+import { TokenStorageService } from 'src/app/services/token-storage/token-storage.service';
 
 @Component({
   selector: 'app-customer-control',
@@ -10,24 +11,32 @@ import {Router} from "@angular/router";
 })
 export class CustomerControlComponent implements OnInit{
 
-  customer: Customer[] = [];
-
-  constructor(private customerService: CustomerService,private router:Router, ) {
+  customerList: Customer[] = [];
+  role:string;
+  constructor(private customerService: CustomerService,
+              private router:Router, 
+              private tokenStorageService: TokenStorageService,
+             ) {
   }
 
   ngOnInit(): void {
-    this.getCustomers();
+    if(this.tokenStorageService.getToken())
+    this.listAll();
+    const user = this.tokenStorageService.getUser();
+    this.role =user.roles;
   }
 
-  getCustomers(){
+ listAll(){
     this.customerService.getAllCustomer().subscribe(data =>{
-        this.customer =data;
+        this.customerList =data;
     })
   }
 
   addCustomer(){
-    this.router.navigate([`/admin/customer/new`])
+    this.router.navigate([`/admin/customer/add`])
   }
+
+
 
   updateCustomer(id:number){
     this.router.navigate([`/admin/customer/update/${id}`])
@@ -38,7 +47,7 @@ export class CustomerControlComponent implements OnInit{
 
     if(option){
       this.customerService.deleteCustomer(id).subscribe(data =>{
-        this.getCustomers();
+        this.listAll();
       })
     }
   }

@@ -40,3 +40,15 @@
   text-align: center;
 
 }
+/* recruit */
+.image{
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.anhtintuc{
+  float: left;
+  width: 30%;
+  height: 100px;
+  padding-right: 10px;
+}
