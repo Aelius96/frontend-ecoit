@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
+import {Product} from "../../../core/model/product/product";
+import {ProductService} from "../../../services/product/product.service";
 
 
 @Component({
@@ -7,16 +9,43 @@ import { Router } from '@angular/router';
   templateUrl: './product-control.component.html',
   styleUrls: ['./product-control.component.css']
 })
-export class ProductControlComponent {
-
-  constructor(private router:Router,) {
+export class ProductControlComponent implements OnInit{
+  products: Product[] = [];
+  url: string;
+  constructor(private router:Router,private productService : ProductService) {
   }
-  
-    updateNews(id: number){
-      return this.router.navigate(['new/update', id]);
-  
+
+    getProductList(){
+    this.productService.getProductList().subscribe(data =>{
+      this.products = data;
+      }
+    )
     }
-  
+    ngOnInit(): void {
+    this.getProductList();
+    }
+
+
+
+    updateProduct(id: number){
+      return this.router.navigate(['admin/product/update', id]);
+
+    }
+
+    addProduct(){
+    return this.router.navigate([`admin/product/add`]);
+    }
+
+
+  deleteProduct(id: number){
+    let option = confirm("Bạn có chắc chắn xóa khách hàng này?");
+
+    if(option){
+      this.productService.deleteProduct(id).subscribe(data =>{
+        this.getProductList();
+      })
+    }
+  }
 
 
 }

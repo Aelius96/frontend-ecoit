@@ -14,10 +14,10 @@ export class NumberHomeComponent implements OnInit{
   constructor(private numberService: NumberService) { }
 
   ngOnInit() {
-    this.getAllUser();
+    this.getAllNumber();
   }
 
-  public getAllUser(): void {
+  public getAllNumber(): void {
     this.numberService.getAllNumber().subscribe(
       (response:Number[]) => {
         this.nums = response;

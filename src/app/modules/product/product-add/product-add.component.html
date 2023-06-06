@@ -1,4 +1,4 @@
-<form >
+<form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -11,15 +11,15 @@
           </div>
           <div class="update_box">
             <span><strong>Tên</strong></span>
-            <input type="text" ng-Model="new.description" name="description">
+            <input type="text" [(ngModel)]="products.name"  name="name">
           </div>
           <div class="update_box">
             <span><strong>Mô tả</strong></span>
-            <textarea style="height: 120px" ></textarea>
+            <textarea style="height: 120px" [(ngModel)] = "products.description" name="description"></textarea>
           </div>
           <div class="submit-button">
             <button type="submit" class="btn btn-primary btn-lg btnn">Lưu</button>
-            <button type="button" class="btn btn-secondary btn-lg btnn cancel"  >Hủy</button>
+            <button type="button" class="btn btn-secondary btn-lg btnn cancel"  (click)="backToProductList()">Hủy</button>
           </div>
         </div>
         <div class="col-lg-8">
@@ -28,15 +28,15 @@
             <span><strong>Nội dung</strong></span>
             <div class="ckeditorContaniner" id="editor">
   <!--            <ckeditor [editor]="Editor"  [data]="new.content"></ckeditor>-->
-              <ckeditor ngModel="new.content" [config]="ckeConfig" ></ckeditor>
+              <ckeditor [(ngModel)]="products.content" [ngModelOptions]="{standalone: true}" [config]="ckeConfig" ></ckeditor>
             </div>
           </div>
         </div>
       </div>
     </div>
   </form>
-  
-  
+
+
   <!--<script>-->
   <!--  InlineEditor-->
   <!--    .create( document.querySelector( '#editor' ) )-->
@@ -44,4 +44,3 @@
   <!--      console.error( error );-->
   <!--    } );-->
   <!--</script>-->
-  

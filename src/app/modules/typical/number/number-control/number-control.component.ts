@@ -33,7 +33,7 @@ getAllNumber(){
   updateTypicalNum(id : number){
    this.router.navigate([`/number/edit/${id}`]);
 }
- deleteElement(id: number){
+ deleteTypicalNum(id: number){
    let option = confirm("Dữ liệu sẽ bị xóa . Bạn có mốn tiếp tục ");
 
    if(option){

@@ -1,26 +1,28 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {News} from "../../core/model/news/news";
 import {Obj} from "@popperjs/core";
+import {Constant} from "../../core/config/constant";
 
 @Injectable({
   providedIn: 'root'
 })
 export class NewsService {
 
-private baseUrl = 'http://localhost:8080/api/v1';
+private baseUrl = `${Constant.BASE_URL}`;
 
   constructor(private http: HttpClient) {
+  }
+
+  listAllWithPage(params: any): Observable<any>{
+    return this.http.get(`${this.baseUrl}/news`,{params})
   }
 
   public listAll(): Observable<News[]>{
     return this.http.get<News[]>(`${this.baseUrl}/news`);
   }
 
-  public addNews(news: News): Observable<Object>{
-    return this.http.post<News>(`${this.baseUrl}/news/add`,news);
-  }
 
   createNews(news: FormData): Observable<Object>{
     return this.http.post(`${this.baseUrl}/news/add`, news);

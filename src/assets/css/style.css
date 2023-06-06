@@ -3158,6 +3158,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, in
   -webkit-justify-content: flex-end !important;
       -ms-flex-pack: end !important;
           justify-content: flex-end !important;
+
 }
 
 .header__actions {

@@ -3,18 +3,30 @@ import {Constant} from "../../core/config/constant";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Domain} from "../../core/domain/domain";
+import {Recruit} from "../../core/model/recuit/recuit";
 
 @Injectable({
   providedIn: 'root'
 })
 export class RecruitService{
-  // private domain=`${Domain.RECRUIT}`
-  // private baseURL = `${Constant.BASE_URL}`;
-  // constructor(private httpClient: HttpClient) {
-  // }
+  private baseUrl = `${Constant.BASE_URL}/recruit`
 
+  constructor(private http:HttpClient) {
+  }
 
-  // getById(id:number): Observable<any>{
-  //   return this.httpClient.get(`${this.baseURL}/${this.domain}/d/${id}`)
-  // }
+  public listAll(): Observable<Recruit[]>{
+    return this.http.get<Recruit[]>(`${this.baseUrl}`)
+  }
+
+  public addRecruitNews(recruit: FormData): Observable<Object>{
+    return this.http.post<Recruit>(`${this.baseUrl}/add`,recruit)
+  }
+
+  public updateRecruitNews(id: number,recruit: FormData): Observable<Object>{
+    return this.http.post<Recruit>(`${this.baseUrl}/update/${id}`,recruit)
+  }
+
+  deleteRecruitNews(id: number): Observable<Object>{
+    return this.http.get(`${this.baseUrl}/delete/${id}`);
+  }
 }

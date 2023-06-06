@@ -144,15 +144,9 @@ export class CustomerAddComponent {
   }
 
   addMoreProduct(){
-    window.sessionStorage.setItem("redirect", "/admin/customer/add-new-customer");
-    this.router.navigate(['/admin/product/new']);
+    window.sessionStorage.setItem("redirect", "/admin/customer/add");
+    this.router.navigate(['/admin/product/add']);
   }
-
-
-
-
-
-
 
 
   imageChange(e: any){

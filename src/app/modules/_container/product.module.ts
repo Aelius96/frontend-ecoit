@@ -8,11 +8,11 @@ import { CommonModule } from "@angular/common";
 
 const routes: Routes = [
     {path:'' , component: ProductControlComponent},
-    {path: 'new', component: ProductAddComponent},
+    {path: 'add', component: ProductAddComponent},
     {path:'update/:id' , component: ProductAddComponent},
-  
+
   ]
-  
+
   @NgModule({
     declarations:[],
     imports:[
@@ -24,4 +24,4 @@ const routes: Routes = [
 
 
 export class ProductModule{}
-// 
+//

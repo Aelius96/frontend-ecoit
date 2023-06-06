@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RecuitControlComponent } from './recuit-control.component';
+import { RecruitControlComponent } from './recruit-control.component';
 
 describe('RecuitControlComponent', () => {
-  let component: RecuitControlComponent;
-  let fixture: ComponentFixture<RecuitControlComponent>;
+  let component: RecruitControlComponent;
+  let fixture: ComponentFixture<RecruitControlComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RecuitControlComponent]
+      declarations: [RecruitControlComponent]
     });
-    fixture = TestBed.createComponent(RecuitControlComponent);
+    fixture = TestBed.createComponent(RecruitControlComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

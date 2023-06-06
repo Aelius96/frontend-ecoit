@@ -11,7 +11,7 @@ export class RegisterComponent {
   isSuccessful: any;
   errorMessage="";
   form: any ={};
-
+  roles : any;
   constructor(private authService:AuthService) {
   }
 
@@ -25,6 +25,7 @@ export class RegisterComponent {
       err =>{
         this.errorMessage = err.error.message;
         this.isSignUpFailed = true;
+        this.errorMessage = "Đăng ký thất bại!!"
       })
   }
 }

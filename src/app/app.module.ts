@@ -50,7 +50,7 @@ import {NewsControlComponent} from './modules/news/news-control/news-control.com
 import {NewsAddComponent} from './modules/news/news-add/news-add.component';
 import {CKEditorModule} from "ng2-ckeditor";
 // import {CKEditorModule} from "@ckeditor/ckeditor5-angular";
-import {RecuitControlComponent} from './modules/recruit/recuit-control/recuit-control.component';
+import {RecruitControlComponent} from './modules/recruit/recruit-control/recruit-control.component';
 import {RecruitAddComponent} from './modules/recruit/recruit-add/recruit-add.component';
 import {CustomerControlComponent} from './modules/customer/customer-control/customer-control.component';
 import {GalleryControlComponent} from './modules/typical/gallery/gallery-control/gallery-control.component';
@@ -73,6 +73,9 @@ import { SliderAddComponent } from './modules/sliders/slider-add/slider-add.comp
 import { SliderControlComponent } from './modules/sliders/slider-control/slider-control.component';
 import { BannerAddComponent } from './modules/banner/banner-add/banner-add.component';
 import { BannerControlComponent } from './modules/banner/banner-control/banner-control.component';
+import { CusTypicalAddComponent } from './modules/typical/customer/cus-typical-add/cus-typical-add.component';
+import { CusTypicalControlComponent } from './modules/typical/customer/cus-typical-control/cus-typical-control.component';
+import {NgxPaginationModule} from "ngx-pagination";
 
 
 @NgModule({
@@ -116,7 +119,7 @@ import { BannerControlComponent } from './modules/banner/banner-control/banner-c
     BlogAddComponent,
     NewsControlComponent,
     NewsAddComponent,
-    RecuitControlComponent,
+    RecruitControlComponent,
     RecruitAddComponent,
     CustomerControlComponent,
     GalleryControlComponent,
@@ -135,6 +138,8 @@ import { BannerControlComponent } from './modules/banner/banner-control/banner-c
     SliderControlComponent,
     BannerAddComponent,
     BannerControlComponent,
+    CusTypicalAddComponent,
+    CusTypicalControlComponent,
 
   ],
     imports: [
@@ -145,7 +150,8 @@ import { BannerControlComponent } from './modules/banner/banner-control/banner-c
         HttpClientModule,
         CommonModule,
         ReactiveFormsModule,
-        NgOptimizedImage
+        NgOptimizedImage,
+        NgxPaginationModule
     ],
   providers: [authInterceptorProviders],
 

@@ -10,7 +10,8 @@ import { UserActiveComponent } from "../user/user-active/user-active.component";
 
 const routes: Routes = [
   {path:'' , component: UserControlComponent},
-  {path: 'new', component: UserAddComponent},
+  {path: 'add', component: UserAddComponent},
+  {path: 'update/:id', component: UserAddComponent},
   {path:'active' , component: UserActiveComponent},
 
 ]

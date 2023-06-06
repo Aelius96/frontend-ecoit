@@ -12,7 +12,7 @@ export class CustomerControlComponent implements OnInit{
 
   customer: Customer[] = [];
 
-  constructor(private customerService: CustomerService,private router:Router, ) {
+  constructor(private customerService: CustomerService,private router:Router ) {
   }
 
   ngOnInit(): void {
