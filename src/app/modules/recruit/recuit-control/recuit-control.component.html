@@ -3,7 +3,7 @@
     <div class="left-d-flex">
       <div class="d-flex">
         <a style="width: 80px" routerLink="../news"  routerLinkActive="active"><span  class="spann tt">Tin tức</span></a> <span style=" font-weight: bolder;font-size: 25px;height: 40px">|</span>
-        <a style="width: 120px" routerLink="../recuit" routerLinkActive="active"  ><span  class="spann td">Tuyển dụng</span></a>
+        <a style="width: 120px" routerLink="../recruit" routerLinkActive="active"  ><span  class="spann td">Tuyển dụng</span></a>
         <input type="text " class="form-control "  placeholder="Viết gì đó ...">
         <div class="input-group-append inputt" >
           <button type="submit" class="input-group-text"><i class="fa fa-search"></i></button>
@@ -21,12 +21,11 @@
               <option>3</option>
               <option>4</option>
               <option>5</option>
-              <option>6</option>
             </select>
           </div>
         </div>
         <div class="menu-item">
-          <a class="ht-btn-custom" routerLink="addnew"  title="Thêm tin mới"><i class="fas fa-file-plus fa-lg"></i></a>
+          <a class="ht-btn-custom" routerLink="add"  title="Thêm tin mới"><i class="fas fa-file-plus fa-lg"></i></a>
         </div>
       </div>
     </div>
@@ -39,38 +38,39 @@
   <div class="container">
     <div class="item-blog">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12" *ngFor="let recruit of recruitlist">
           <div class="card">
             <div class="card-header">
               <div class="row ">
                 <div class="col-md-2">
-                  <img style="width: 100%; height: 90px" src="./assets/images/placeholder.png" alt="">
+                  <img style="width: 100%; height: 90px" src="{{recruit.thumb.pathUrl}}" alt="">
                 </div>
                 <div class="col-md-7">
                   <p>
-                    Gác lại những ngày nắng nóng oi ả của mùa hè,
-                    để hạ nhiệt cho anh/chị/em Cán bộ nhân viên cũng như tạo nên không khí vui tươi, giải
-                    toả áp lực sau những ngày làm việc,
+                    {{recruit.description}}
                   </p>
                 </div>
                 <div class="col-md-2">
-                  01-01-2023
+                  {{recruit.createDate}}
                 </div>
                 <div class="action-box ">
                   <!--                 ví dụ về button sửa-->
-                  <button   style="background-color: #50b848" class="btnn"  ><i class="far fa-pen"></i> </button>
+                  <button (click)="updateRecruit(recruit.id)"   style="background-color: #50b848" class="btnn"  ><i class="far fa-pen"></i> </button>
 
-                  <button  style="background-color: red" class="btnn" ><i class="far fa-times"></i> </button>
+                  <button (click)="deleteRecruit(recruit.id)" style="background-color: red" class="btnn" ><i class="far fa-times"></i> </button>
                 </div>
               </div>
               <h5 class="tittle-blog">
-                <a class="btn-link">Tiêu đề tuyển dụng
+                <a class="btn-link">{{recruit.title}}
                   <span>
-                    <i class="fas fa-plus-circle"></i>
-                    <i class="fas fa-minus-circle"></i>
+                    <i class="fas fa-plus-circle" data-toggle="collapse" data-target="#demo"  ></i>
+                    
                   </span>
                 </a>
               </h5>
+              <div id="demo" class="collapse" [innerHTML]="recruit.content">
+                
+              </div>
             </div>
           </div>
         </div>

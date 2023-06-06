@@ -7,7 +7,7 @@ import {RecruitAddComponent} from "../recruit/recruit-add/recruit-add.component"
 
 const routes: Routes = [
   {path:'' , component: RecuitControlComponent},
-  {path: 'addnew', component: RecruitAddComponent},
+  {path: 'add', component: RecruitAddComponent},
   {path:'update/:id' , component: RecruitAddComponent},
 
 ]

@@ -8,7 +8,7 @@ import {CustomerAddComponent} from "../customer/customer-add/customer-add.compon
 
 const routes: Routes = [
   {path:'' , component: CustomerControlComponent},
-  {path: 'new', component: CustomerAddComponent},
+  {path: 'add', component: CustomerAddComponent},
   {path:'update/:id' , component: CustomerAddComponent},
 ]
 

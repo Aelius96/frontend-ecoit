@@ -1,4 +1,8 @@
 import {Component, Input} from '@angular/core';
+import { Router } from '@angular/router';
+import { Customer } from 'src/app/core/model/customer/customer';
+import { CustomerService } from 'src/app/services/customer/customer.service';
+import { TokenStorageService } from 'src/app/services/token-storage/token-storage.service';
 
 @Component({
   selector: 'app-customer-list',
@@ -7,38 +11,25 @@ import {Component, Input} from '@angular/core';
 })
 export class CustomerListComponent {
 
-  customer = [
-    {
-      id: 1,
-      backgroundColor:'#732dec',
-      cusIcon: 'fa fa-bank',
-      cusTitle: 'KHÁCH HÀNG CHÍNH PHỦ',
-      cusDescription: 'Bao gồm các Bộ, Ban, Ngành và các cơ quan nhà nước khác',
-      url:'khach-hang-chinh-phu'
-    },
-    {
-      id: 2,
-      backgroundColor:'#673ab7',
-      cusIcon: 'fa fa-slideshare',
-      cusTitle: 'KHÁCH HÀNG DOANH NGHIỆP',
-      cusDescription: 'Bao gồm các tập đoàn, doanh nghiệp lớn trong và ngoài nước',
-      url:'khach-hang-doanh-nghiep'
-    },
-    {
-      id: 3,
-      backgroundColor:'#6fbd66',
-      cusIcon: 'fa fa-dollar',
-      cusTitle: 'KHÁCH HÀNG TÀI CHÍNH-NGÂN HÀNG',
-      cusDescription: 'Bao gồm các ngân hàng, công ty tài chính',
-      url:'khach-hang-tai-chinh-ngan-hang'
-    },
-    {
-      id: 4,
-      backgroundColor:'#bd9366',
-      cusIcon: 'fa fa-shield',
-      cusTitle: 'KHÁCH HÀNG AN NINH - QUỐC PHÒNG',
-      cusDescription: 'Bao gồm các cơ quan, đơn vị thuộc Bộ Công An và Bộ Quốc Phòng',
-      url:'khach-hang-an-ninh-quoc-phong'
-    },
-  ]
+ 
+  customerList: Customer[] = [];
+  role:string;
+  constructor(private customerService: CustomerService,
+              private router:Router, 
+              private tokenStorageService: TokenStorageService,
+             ) {
+  }
+
+  ngOnInit(): void {
+    if(this.tokenStorageService.getToken())
+    this.listAll();
+    const user = this.tokenStorageService.getUser();
+    this.role =user.roles;
+  }
+
+ listAll(){
+    this.customerService.getAllCustomer().subscribe(data =>{
+        this.customerList =data;
+    })
+  }
 }

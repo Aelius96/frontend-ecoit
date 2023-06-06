@@ -6,19 +6,21 @@ import { CusTypicalAddComponent } from "../typical/customer/cus-typical-add/cus-
 
 
 
+const routes: Routes =[
 
-const routes: Routes = [
-    {path:'' , component: CusTypicalControlComponent},
-    {path: 'new', component: CusTypicalAddComponent},
    
+        {path:'', component: CusTypicalControlComponent},
+        {path:'add', component: CusTypicalAddComponent},
+        {path:'update/:id' , component: CusTypicalAddComponent}
   ]
   
   @NgModule({
-    declarations:[],
-    imports:[
+    declarations: [],
+    imports: [
       CommonModule,
-      RouterModule.forChild(routes),
+      RouterModule.forChild(routes)
     ],
     exports: [RouterModule]
   })
+  
   export class CusTypicalModule{}

@@ -1,5 +1,4 @@
 
-
 export class Blog{
   id: any;
   title: any;
