@@ -51,6 +51,7 @@ export class ProductAddComponent implements OnInit{
       this.url= reader.result;
     }
   }
+
   backToProductList(){
     return this.router.navigate([`admin/product`]);
   }
@@ -84,9 +85,9 @@ export class ProductAddComponent implements OnInit{
         // this.fileToUpload[i].name
       )
     }
-
     return formData;
   }
+
   onSubmit(){
     if(this.id){
       this.addDataToForm(this.id);

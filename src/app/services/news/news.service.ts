@@ -18,7 +18,9 @@ private baseUrl = `${Constant.BASE_URL}`;
   listAllWithPage(params: any): Observable<any>{
     return this.http.get(`${this.baseUrl}/news`,{params})
   }
-
+  listAllWithPageHome(params: any): Observable<any>{
+    return this.http.get(`${this.baseUrl}/news/home`,{params})
+  }
   public listAll(): Observable<News[]>{
     return this.http.get<News[]>(`${this.baseUrl}/news`);
   }

@@ -21,7 +21,6 @@ const routes: Routes =[
     // {path: 'image-gallery', title:'Admin-khách hàng tiêu biểu', loadChildren:()=>import('./gallery.module').then(m=>m.GalleryModule) },
     {path: 'user', title:'Admin-tài khoản', loadChildren:()=>import('./user.module').then(m=>m.UserModule )  },
     {path:'history' , title: 'Admin-lịch sử sử đổi' , component: HistoryListComponent},
-
     {path: 'product' , title: 'Admin-sản phẩm' , loadChildren:()=>import('./product.module').then(m=>m.ProductModule) },
     {path: 'navigator' , title: 'Admin-điều hướng' , loadChildren:()=>import('./navigator.module').then(m=>m.NavigatorModule) },
     {path:'slide', title:'Admin-trình chiếu' , loadChildren:()=>import('./sliders.module').then(m=>m.SlidersModule)},

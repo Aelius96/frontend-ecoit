@@ -21,7 +21,9 @@ export class RecruitService{
   public addRecruitNews(recruit: FormData): Observable<Object>{
     return this.http.post<Recruit>(`${this.baseUrl}/add`,recruit)
   }
-
+  public getRecruitId(id: number): Observable<Recruit>{
+    return this.http.get<Recruit>(`${this.baseUrl}/recruit/${id}`);
+  }
   public updateRecruitNews(id: number,recruit: FormData): Observable<Object>{
     return this.http.post<Recruit>(`${this.baseUrl}/update/${id}`,recruit)
   }

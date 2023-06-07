@@ -12,8 +12,7 @@ import {ActivatedRoute, Router} from "@angular/router";
   styleUrls: ['./customer-add.component.css']
 })
 export class CustomerAddComponent {
-
-    ckeConfig: any;
+  ckeConfig: any;
 
   url: any;
   id: any;

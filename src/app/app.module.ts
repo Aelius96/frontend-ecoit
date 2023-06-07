@@ -76,6 +76,7 @@ import { BannerControlComponent } from './modules/banner/banner-control/banner-c
 import { CusTypicalAddComponent } from './modules/typical/customer/cus-typical-add/cus-typical-add.component';
 import { CusTypicalControlComponent } from './modules/typical/customer/cus-typical-control/cus-typical-control.component';
 import {NgxPaginationModule} from "ngx-pagination";
+import { NewsDetailComponent } from './modules/news/news-detail/news-detail.component';
 
 
 @NgModule({
@@ -140,6 +141,7 @@ import {NgxPaginationModule} from "ngx-pagination";
     BannerControlComponent,
     CusTypicalAddComponent,
     CusTypicalControlComponent,
+    NewsDetailComponent,
 
   ],
     imports: [
